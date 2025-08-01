@@ -290,6 +290,13 @@
   
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest"></script>
 <script>
+   function toMokuroUrl(htmlPath) {
+    const rel = htmlPath.replace(/^\.\//, '').replace(/\.html$/, '.mokuro');
+    return `reader.html?path=${encodeURIComponent(rel)}`;
+  }
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const seriesContainer = document.getElementById('series-container');
 
@@ -330,11 +337,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-</script>
-
-
-  <script>
 
 function loadAllVolumes() {
   fetch("/progress")
@@ -405,15 +407,15 @@ function renderSeries(sortedSeries) {
 }
     const titleOverlay = clone.querySelector(".title-overlay");
 
-    link.href = currentVolume.path;
-    const folder = currentVolume.path.replace(".html", "");
+    link.href = toMokuroUrl(currentVolume.path);
+    const folder = currentVolume.path.replace(".mokuro", "");
     const cover = currentVolume.mokuro.cover_page || "0.jpg";
     const imagePath = `${folder}/${encodeURIComponent(cover)}`;
     img.src = imagePath;
 
     titleOverlay.textContent = decodeURIComponent(series);
 
-    readBtn.onclick = () => window.location.href = currentVolume.path;
+    readBtn.onclick = () => window.location.href = toMokuroUrl(currentVolume.path);
 
 allBtn.onclick = () => {
 	const scrollBarFix = () => {
@@ -480,10 +482,10 @@ document.body.style.removeProperty("--scrollbar-width");
     // 📎 Bild & Link setzen
     const volLink = volClone.querySelector("a");
     const volImg = volClone.querySelector("img");
-    volLink.href = vol.path;
+    volLink.href = toMokuroUrl(vol.path);
 
     const volCover = vol.mokuro.cover_page || "0.jpg";
-    volImg.src = `${vol.path.replace(".html", "")}/${encodeURIComponent(volCover)}`;
+    volImg.src = `${vol.path.replace(".mokuro", "")}/${encodeURIComponent(volCover)}`;
 if (
   typeof vol.mokuro.page_idx === "number" &&
   typeof vol.mokuro.last_page_idx === "number" &&

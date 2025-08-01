@@ -12,7 +12,7 @@ def normalize(path):
 
 
 # Flask-Session für Session-Management
-app = Flask(__name__, static_url_path="/static", static_folder="/media/gamedisk/japanese")
+app = Flask(__name__, static_url_path="/static", static_folder="/media/gamedisk/newserver")
 
 CORS(app)
 # Keine Authentifizierung und CORS mehr
@@ -176,6 +176,69 @@ def serve_manga(filename):
     if filename.endswith((".jpg", ".jpeg", ".png", ".webp")):
         response.headers["Cache-Control"] = "public, max-age=86400"
     return response
+
+@app.route("/reader.html")
+def serve_reader():
+    return send_from_directory(app.static_folder, "reader.html")
+
+BOOKMARKS_PATH = "bookmarks.json"
+
+def load_bookmarks():
+    if not os.path.exists(BOOKMARKS_PATH):
+        with open(BOOKMARKS_PATH, "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
+    try:
+        with open(BOOKMARKS_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+def save_bookmarks(bm):
+    with open(BOOKMARKS_PATH, "w", encoding="utf-8") as f:
+        json.dump(bm, f, ensure_ascii=False, indent=2)
+
+@app.route("/bookmarks")
+def get_bookmarks():
+    """GET /bookmarks?path=…  → { path: “…”, bookmarks: [ {title, page_idx}, … ] }"""
+    all_bm = load_bookmarks()
+    p = normalize(request.args.get("path",""))
+    entry = next((e for e in all_bm if normalize(e["path"])==p), None)
+    return jsonify(entry or {"path":p,"bookmarks":[]})
+
+@app.route("/update_bookmark", methods=["POST"])
+def update_bookmark():
+    """POST /update_bookmark  { path, title, page_idx }"""
+    data = request.json
+    p = normalize(data["path"])
+    title    = data.get("title","")
+    page_idx = int(data.get("page_idx",0))
+    bm_list = load_bookmarks()
+    # finde oder neu anlegen
+    entry = next((e for e in bm_list if normalize(e["path"])==p), None)
+    if not entry:
+        entry = {"path":p, "bookmarks":[]}
+        bm_list.append(entry)
+    # überschreibe bei gleichem Titel, sonst hinzufügen
+    existing = next((b for b in entry["bookmarks"] if b["title"]==title),None)
+    if existing:
+        existing["page_idx"] = page_idx
+    else:
+        entry["bookmarks"].append({"title":title,"page_idx":page_idx})
+    save_bookmarks(bm_list)
+    return jsonify({"status":"ok","bookmarks":entry["bookmarks"]})
+
+@app.route("/delete_bookmark", methods=["POST"])
+def delete_bookmark():
+    """POST /delete_bookmark  { path, title }"""
+    data = request.json
+    p = normalize(data["path"])
+    title = data.get("title","")
+    bm_list = load_bookmarks()
+    entry = next((e for e in bm_list if normalize(e["path"])==p), None)
+    if entry:
+        entry["bookmarks"] = [b for b in entry["bookmarks"] if b["title"]!=title]
+        save_bookmarks(bm_list)
+    return jsonify({"status":"ok"})
 
 
 if __name__ == "__main__":

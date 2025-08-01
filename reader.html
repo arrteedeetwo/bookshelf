@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Mokuro Reader Zoom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    html, body {
+      font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+    }
+    #controls {
+  display: grid;
+  grid-auto-rows: auto;                  /* Höhe richtet sich nach Content */
+  gap: 8px;                              /* Abstände zwischen Items */
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+    }
+    /* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+    #pages-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+          width: 100%;        /* volle Breite */
+  height: 100%;       /* volle Höhe */
+  overflow: hidden;
+    display: flex;
+  justify-content: center; /* horizontal zentrieren */
+  align-items: flex-start; /* am oberen Rand beginnen – kein vertical centering! */
+  overflow: hidden;        /* kein Scrollen, Bild soll ganz reinpassen */
+  z-index: 1;
+    }
+    .zoom-wrapper {
+     transform-origin: 50% 50%;
+
+    }
+#nav-left,
+#nav-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 0;       /* hinter den Bildern */
+  cursor: pointer;
+}
+#nav-left  { left: 0;  }
+#nav-right { right: 0; }
+    #zoomContainer {  display: inline-block;   /* so wächst es in Breite (= scrollbar) */
+  transform-origin: center center;}
+    #pages {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+    .page-container {
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      width:auto;
+    }
+    .textBox {
+      position: absolute;
+      background: white;
+      color: black;
+      padding: 2px;
+      line-height: 1.2;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      pointer-events: auto;
+      z-index: 5;
+    }
+    .textBox:hover {
+      opacity: 1;
+      z-index: 10;
+    }
+    .textBox p {
+      display: none;
+      white-space: nowrap;
+      letter-spacing: 0.1em;
+      line-height: 1.1em;
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+    }
+    .textBox:hover p {
+      display: inline-block;
+    }
+     #hamsti-nav-buttons {
+      position: fixed;
+      top: 42px;
+      z-index: 9999;
+    }
+
+    .hamsti-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      opacity: 0.9;
+      border-radius: 8px;
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      width:42px;
+      height:42px;
+      text-align: center;
+    }
+
+    .hamsti-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .hamsti-button[aria-pressed="true"] {
+  background: #007acc;
+  color: #fff;
+}
+
+    .hamsti-button svg {
+      width: 24px;
+      height: 24px;
+    }
+    #pageIdxInput {
+  grid-column: 1 / -1;  /* von SP1 bis zum Ende */
+  width: 100%;          /* sicherstellen, dass es die volle Spalte füllt */
+  box-sizing: border-box;
+  width:84px;
+  font-size:1.2rem;
+}
+#numberStatus {
+    padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+  </style>
+<script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
+</head>
+<body class="bg-zinc-100">
+  <div id="bookmarkModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white p-4 rounded shadow-lg w-80">
+    <h2 class="text-lg mb-2">Bookmarks</h2>
+    <ul id="bookmarkList" class="divide-y"></ul>
+    <div class="mt-4 flex justify-between">
+      <button id="addBookmarkBtn" class="hamsti-button">+ Add</button>
+      <button id="closeBookmarkBtn" class="hamsti-button">× Close</button>
+    </div>
+  </div>
+</div>
+  <div id="controls">
+   
+    <a id="backToShelf" class="hamsti-button" href="/serve_bookshelf" title="home">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875
+             c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+    </svg>
+  </a>
+  
+    <button id="doublePageBtn" class="hamsti-button" title="home">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+</svg>
+
+  </button>
+        <button id="coverFirstBtn" class="hamsti-button" title="first page is cover">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+</svg>
+  </button>
+
+  
+
+  
+
+  <button id="firstPageBtn" class="hamsti-button" aria-label="Erste Seite" class="nav-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5 12.75 12l-7.5 7.5m6-15 7.5 7.5-7.5 7.5"/>
+    </svg>
+    
+  </button>
+
+  <!-- Deine bestehenden Checkboxen etc. -->
+
+  <!-- Letzte Seite-Button -->
+  <button id="lastPageBtn" class="hamsti-button" aria-label="Letzte Seite" class="nav-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 4.5L11.25 12l7.5 7.5M12.75 4.5 5.25 12l7.5 7.5"/>
+    </svg>
+  </button>
+<button class="hamsti-button" id="resetPanzoom"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+</svg>
+</button>
+<button id="bookmarkBtn" class="hamsti-button" title="Bookmarks">
+  <!-- z.B. ein Lesezeich-Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M5 5v14l7-5 7 5V5H5z" />
+  </svg>
+</button>
+</div>
+<div id="numberStatus">
+ <input id="pageIdxInput" class="hamsti-button" type="number" min="1" value="1"/>
+  </div>
+  <div id="pages-wrapper">
+      <div id="nav-left"></div>
+  <div id="nav-right"></div>
+    <div class="zoom-wrapper" id="zoomContainer">
+      
+<div id="pages"></div>
+    </div>
+  </div>
+
+  
+
+  <script>
+
+    
+    let panzoomInstance;
+
+function doReset() {
+  // Position zurücksetzen
+  if (panzoomInstance.moveTo) {
+    panzoomInstance.moveTo(0, 0);
+  } else {
+    const { x, y } = panzoomInstance.getTransform();
+    panzoomInstance.moveBy(-x, -y);
+  }
+  // Zoom absolut auf 1
+  if (panzoomInstance.zoomAbs) {
+    panzoomInstance.zoomAbs(0, 0, 1);
+  } else {
+    panzoomInstance.zoomTo(0, 0, 1);
+  }
+}
+
+function syncAndSave() {
+  const input = document.getElementById("pageIdxInput");
+  if (!input) return;
+  // 1) Input auf den aktuellen Wert setzen
+  input.value = current + 1;
+  // 2) change-Event dispatchen, damit dein progress-Listener feuert
+  input.dispatchEvent(new Event("change"));
+}
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const pc = document.getElementById('zoomContainer');
+    panzoomInstance = panzoom(pc, {
+      transformOrigin: { x: 0.5, y: 0.5 },
+      filterKey: () => true,
+      zoomDoubleClickSpeed: 1
+    });
+
+    // 4) Button- und dblclick-Handler
+    document.getElementById('resetPanzoom')
+            .addEventListener('click', doReset);
+    pc.addEventListener('dblclick', e => {
+      e.preventDefault();
+      doReset();
+    });
+  });
+    const params = new URLSearchParams(location.search);
+    const path = params.get("path");
+    if (!path) {
+      document.body.innerHTML = "<p>No mokuro path given.</p>";
+      throw new Error("No path");
+    }
+
+    const pagesEl = document.getElementById("pages");
+    let pages = [], current = 0, zoomLevel = 1;
+
+    const load = async () => {
+      const res = await fetch(path);
+      const data = await res.json();
+      pages = data.pages;
+      show();
+    };
+
+const show = () => {
+  // 1) Referenzen & Clear
+  const pagesEl  = document.getElementById("pages");            // wo die .page-container rein
+  const wrapper  = document.getElementById("pages-wrapper");   // für die Höhe
+  pagesEl.innerHTML = "";
+
+  // 2) Optionen
+  const double = doubleBtn.getAttribute('aria-pressed') === 'true';
+  const isCover = coverBtn.getAttribute('aria-pressed') === 'true';
+
+  // 3) Verfügbarer Platz in der Höhe
+  const availHeight = wrapper.clientHeight;
+
+  // 4) Renderer für eine oder zwei Seiten
+  const showPages = (idxList) => {
+    idxList.forEach(idx => {
+      const page = pages[idx];
+      if (!page) return;
+
+      // 4a) Skalierung so, dass die Seite in availHeight passt
+      const scale = availHeight / page.img_height;
+ // b1) Wrapper, der das Flex-Item darstellt, mit skaliertem Maß
+const wrapperDiv = document.createElement("div");
+ wrapperDiv.className = "page-wrapper";
+ wrapperDiv.style.width  = (page.img_width  * scale) + "px";
+wrapperDiv.style.height = (page.img_height * scale) + "px";
+
+// b2) Innerer Container mit Originalgröße + Transform
+const container = document.createElement("div");
+container.className = "page-container";
+container.style.width           = page.img_width  + "px";
+container.style.height          = page.img_height + "px";
+container.style.transform       = `scale(${scale})`;
+container.style.transformOrigin = "top left";
+
+// hänge den transform-Container in den Wrapper …
+wrapperDiv.appendChild(container);
+      // 4c) Hintergrundbild
+      const image = page.filename || page.img_path;
+      const volumePath = path.replace(/\.mokuro$/, "");
+      container.style.backgroundImage    =
+        `url('${volumePath}/${encodeURIComponent(image)}')`;
+      container.style.backgroundSize      = "contain";
+      container.style.backgroundRepeat    = "no-repeat";
+      container.style.backgroundPosition  = "center";
+
+      // 4d) OCR-Boxen in Original-Koordinaten
+      for (const block of page.blocks || []) {
+        const [x1, y1, x2, y2] = block.box || [0,0,0,0];
+        const box = document.createElement("div");
+        box.className      = "textBox";
+        box.style.left     = x1 + "px";
+        box.style.top      = y1 + "px";
+        box.style.width    = (x2 - x1) + "px";
+        box.style.height   = (y2 - y1) + "px";
+        box.style.fontSize = (block.font_size || 20) + "px";
+        box.style.writingMode = block.vertical
+          ? "vertical-rl"
+          : "horizontal-tb";
+
+        for (const line of block.lines || []) {
+          const p = document.createElement("p");
+          p.textContent = typeof line === "string"
+            ? line
+            : (line.text || "");
+          box.appendChild(p);
+        }
+        container.appendChild(box);
+      }
+
+      pagesEl.appendChild(wrapperDiv);
+    });
+    const input = document.getElementById('pageIdxInput');
+  if (input) input.value = current + 1;
+  };
+
+
+
+if (double) {
+  // ← Hier zwischen den geschweiften Klammern einfügen:
+  console.log("coverFirst:", isCover, "doublePage:", double, "current:", current);
+  if (isCover) {
+    if (current === 0) {
+      showPages([0]);
+    } else {
+      const start = 1 + Math.floor((current - 1) / 2) * 2
+      showPages([ start, start + 1 ].filter(i => i < pages.length));
+    }
+  } else {
+    const start = Math.floor(current / 2) * 2;
++    showPages([ start, start + 1 ].filter(i => i < pages.length));
+  }
+} else {
+  showPages([ current ]);
+}
+};
+
+const doubleBtn = document.getElementById('doublePageBtn');
+const coverBtn = document.getElementById('coverFirstBtn');
+
+// Initialen Zustand setzen (z.B. aus localStorage oder Standard)
+let isDouble = true;
+let isCover = false;
+doubleBtn.setAttribute('aria-pressed', isDouble);
+
+doubleBtn.addEventListener('click', () => {
+  // toggeln und neu rendern geschieht hier schon:
+  isDouble = !isDouble;
+  doubleBtn.setAttribute('aria-pressed', isDouble);
+  show();
+});
+
+coverBtn.setAttribute( 'aria-pressed', isCover);
+
+coverBtn.addEventListener('click', () => {
+  // 1) echten aktuellen State aus dem Button lesen
+  const pressed = coverBtn.getAttribute('aria-pressed') === 'true';
+
+  // 2) umkehren und als String setzen
+  coverBtn.setAttribute('aria-pressed', String(!pressed));
+
+  // 3) neu rendern
+  show();
+});
+    
+    const next = () => {
+      const double = document.getElementById('doublePageBtn').getAttribute('aria-pressed') === 'true'
+      const isCover = document.getElementById('coverFirstBtn').getAttribute('aria-pressed') === 'true';
+      const step = double ? (isCover && current === 0 ? 1 : 2) : 1;
+  if (current + step < pages.length) {
+    // innerhalb des Volumes blättern
+    current += step;
+    doReset();
+    show();
+    syncAndSave(); 
+  } else {
+    // letzte Seite erreicht → nächstes Volume laden
+    fetch("/progress")
+      .then(r => r.json())
+      .then(data => {
+        const currentPath = normalize(decodeURIComponent(path));
+        const idx = data.findIndex(e => normalize(e.path) === currentPath);
+        if (idx >= 0 && idx + 1 < data.length) {
+          // umleiten auf das nächste Volume
+          const nextEntry = data[idx + 1];
+        const nextParam = encodeURIComponent(nextEntry.path);
+        const nextUrl   = `${window.location.pathname}?path=${nextParam}`;
+
+        console.log("→ Navigating to next volume URL:", nextUrl);
+        window.location.href = nextUrl;
+          location.href = nextPath;
+        } else {
+            console.warn("Kein nächstes Volume gefunden 🥺");
+  console.log("🔍 Gesuchter Pfad war:", currentPath);
+  console.log("📚 Verfügbare Volumes in progress.json:", data.map(e => e.path));
+  alert(`Kein nächstes Volume gefunden 🥺\nGesucht: ${currentPath}`);
+        }
+      })
+      .catch(console.error);
+  }
+};
+
+    const prev = () => {
+      const double = document.getElementById('doublePageBtn').getAttribute('aria-pressed') === 'true'
+      const isCover = document.getElementById('coverFirstBtn').getAttribute('aria-pressed') === 'true';
+      const step = double ? (isCover && current <= 2 ? 1 : 2) : 1;
+      if (current - step >= 0) {
+        current -= step;
+        doReset();
+        show();
+        syncAndSave(); 
+      } else {
+         fetch("/progress")
+    .then(r => r.json())
+    .then(data => {
+      console.log("Available volumes:", data.map(e => e.path));
+
+      const currentPath = normalize(path);
+      console.log("Current path:", currentPath);
+
+      const idx = data.findIndex(e => normalize(e.path) === currentPath);
+      console.log("Matched index:", idx);
+
+      if (idx > 0) {
+        const prevEntry = data[idx - 1];
+        const prevParam = encodeURIComponent(prevEntry.path);
+        const prevUrl   = `${window.location.pathname}?path=${prevParam}`;
+
+        console.log("→ Navigating to previous volume URL:", prevUrl);
+        window.location.href = prevUrl;
+      } else {
+        console.warn("Kein vorheriges Volume gefunden 🥺");
+        alert("Kein vorheriges Volume gefunden 🥺");
+      }
+    })
+    .catch(err => console.error("Fehler beim Holen von /progress:", err));
+}
+      
+    };
+  document.getElementById('nav-left').addEventListener('click', () => {
+  next();
+});
+document.getElementById('nav-right').addEventListener('click', () => {
+  prev();
+});
+
+// „Erste Seite“: springt zu index 0
+document.getElementById('firstPageBtn').addEventListener('click', () => {
+  doReset();            // Pan/Zoom zurücksetzen
+  current = 0;          // auf erste Seite
+  show();               // neu rendern
+if (input) input.value = current + 1;
+syncAndSave(); 
+});
+
+// „Letzte Seite“: springt zum letzten Index
+document.getElementById('lastPageBtn').addEventListener('click', () => {
+  doReset();                   
+  current = pages.length - 1;  // letzter Index
+  if (input) input.value = current + 1;
+  show();      
+  syncAndSave();                 
+});
+
+      function normalize(path) {
+    return path.replace(/^\/static\//, "").replace(/^\.?\//, "").toLowerCase();
+  }
+
+  
+
+    window.addEventListener("keydown", e => {
+  const input = document.getElementById("pageIdxInput");
+      if (e.key === "ArrowRight") {
+ prev();
+    if (input) input.value = current + 1;
+    input.dispatchEvent(new Event("change"));
+  }
+      if (e.key === "ArrowLeft") {
+            next();
+    if (input) input.value = current + 1;
+    input.dispatchEvent(new Event("change"));
+   
+  }
+    });
+
+const zoomContainer = document.getElementById("zoomContainer");
+
+// Speichere die Originalmaße
+const origWidth  = zoomContainer.clientWidth;
+const origHeight = zoomContainer.clientHeight;
+
+
+    document.getElementById('doublePageBtn').getAttribute('aria-pressed') === 'true'
+   coverBtn.addEventListener('click', () => {
+  isCover = !isCover;
+  coverBtn.setAttribute('aria-pressed', isCover);
+  show();            // rerender mit neuem isCover-Flag
+});
+
+    load();
+      // 🐹 Input-Feld mit Seitenwechsel verknüpfen
+      const input = document.getElementById("pageIdxInput");
+      if (input) {
+        input.addEventListener("change", e => {
+          const val = parseInt(e.target.value, 10);
+          if (!isNaN(val) && val >= 1 && val <= pages.length) {
+            current = val - 1;
+            show();
+          }
+        });
+      }
+
+  
+
+<!-- Fortschritt & Buttons -->
+// ====================== Fortschritt speichern =======================
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Pfad-Parameter holen (z.B. "./manga/シリーズ/01.mokuro")
+  const params = new URLSearchParams(location.search);
+  const mokuroPath = params.get("path");
+  if (!mokuroPath) return;
+
+  // 2. Den HTML-Pfad ableiten (so wie in progress.json: "./manga/シリーズ/01.html")
+  const htmlPath = mokuroPath.replace(/\.mokuro$/, ".html");
+
+  const input = document.getElementById("pageIdxInput");
+  if (!input) return;
+
+fetch("/progress")
+  .catch(console.error);
+
+});
+
+fetch("/progress")
+    .then(res => res.json())
+    .then(data => {
+      console.log("📖 Fortschritt vom Server geladen:", data);
+
+      // Ausgabe des gesuchten Pfads und aller gespeicherten Pfade zur Fehlerbehebung
+      console.log("📖 Gesuchter Pfad:", path);
+      data.forEach(entry => console.log(`📖 Gespeicherter Pfad: ${entry.path}`));
+
+      // Vergleiche den dekodierten Pfad mit den gespeicherten Pfaden
+      const match = data.find(entry => normalize(entry.path) === normalize(path)); // Normalisierung beider Pfade
+      if (match) {
+const idx = match.page_idx || 0;
+input.value    = idx + 1;   // Input updaten
+current         = idx;      // internen Index setzen
+lastSentPage    = idx;      // Guard fürs Speichern
+show();                     // wirklich zur Seite springen
+console.log(`📖 Fortschritt angewendet: Seite ${idx + 1}`);
+        console.log(`📖 Fortschritt angewendet: Seite ${page_idx + 1}`);
+      } else {
+        console.log("📖 Kein Fortschritt für diesen Pfad gefunden.");
+      }
+    })
+    .catch(err => {
+      console.error("Fehler beim Abrufen des Fortschritts:", err);
+    });
+let lastSentPage = -1;
+
+input.addEventListener("change", () => {
+  const current = parseInt(input.value, 10) - 1;
+  if (Number.isNaN(current) || current === lastSentPage) return;
+  lastSentPage = current;
+
+  fetch("/update_progress", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      path:           path,
+      page_idx:       current,
+      last_page_idx:  pages.length
+    })
+  })
+  .catch(console.error);
+});
+
+const backLink = document.getElementById('backToShelf');
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && backLink) {
+    e.preventDefault();
+    backLink.click();
+  }
+});
+const bookmarkBtn    = document.getElementById("bookmarkBtn");
+const bookmarkModal  = document.getElementById("bookmarkModal");
+const bookmarkList   = document.getElementById("bookmarkList");
+const addBookmarkBtn = document.getElementById("addBookmarkBtn");
+const closeBookmarkBtn = document.getElementById("closeBookmarkBtn");
+
+// 1) Modal öffnen & Liste laden
+bookmarkBtn.addEventListener("click", () => {
+  fetch(`/bookmarks?path=${encodeURIComponent(path)}`)
+    .then(r => r.json())
+    .then(data => {
+      bookmarkList.innerHTML = "";
+      data.bookmarks.forEach(b => {
+        const li = document.createElement("li");
+        li.className = "py-1 flex justify-between items-center";
+        li.innerHTML = `
+          <span class="cursor-pointer text-blue-600">${b.title} (Seite ${b.page_idx+1})</span>
+          <button data-title="${b.title}" class="deleteBtn text-red-500">✕</button>
+        `;
+        // Klick auf Titel → springen & schließen
+        li.querySelector("span").addEventListener("click", () => {
+          current = b.page_idx;
+          show();
+          syncAndSave();
+          bookmarkModal.classList.add("hidden");
+        });
+        // Klick auf ✕ → löschen
+        li.querySelector(".deleteBtn").addEventListener("click", e => {
+          const title = e.currentTarget.dataset.title;
+          fetch("/delete_bookmark", {
+            method: "POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify({ path, title })
+          }).then(() => li.remove());
+        });
+        bookmarkList.appendChild(li);
+      });
+      bookmarkModal.classList.remove("hidden");
+    });
+});
+
+// 2) Hinzufügen
+addBookmarkBtn.addEventListener("click", () => {
+  const title = prompt("Titel für Bookmark eingeben:");
+  if (!title) return;
+  fetch("/update_bookmark", {
+    method: "POST",
+    headers: {"Content-Type":"application/json"},
+    body: JSON.stringify({ path, title, page_idx: current })
+  })
+  .then(r => r.json())
+  .then(res => {
+    // Liste neu laden, indem wir einfach den Klick neu triggern:
+    bookmarkBtn.click();
+  });
+});
+
+// 3) Schließen
+closeBookmarkBtn.addEventListener("click", () => {
+  bookmarkModal.classList.add("hidden");
+});
+
+// 4) auch Esc schließt das Modal
+window.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !bookmarkModal.classList.contains("hidden")) {
+    bookmarkModal.classList.add("hidden");
+  }
+});
+</script>
+
+
+
+</body>
+
+</html>
