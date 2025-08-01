@@ -255,24 +255,25 @@ document.addEventListener('DOMContentLoaded', function() {
             const volumesWithProgress = seriesVolumes.filter(v => v.page_idx > 0);
             
             // Determine which volume to display
+            // Modify the volume selection logic in renderBookshelf():
             let displayVolume = seriesVolumes[0]; // Default to first volume
             
-            // 1. First try to find the volume with the highest page progress
-            if (volumesWithProgress.length > 0) {
-                // Sort by last_page_idx descending, then by page_idx descending
-                volumesWithProgress.sort((a, b) => {
-                    if (b.last_page_idx !== a.last_page_idx) {
-                        return b.last_page_idx - a.last_page_idx;
-                    }
-                    return b.page_idx - a.page_idx;
-                });
-                displayVolume = volumesWithProgress[0];
-            }
-            // 2. Then check last accessed volumes
-            else if (lastAccessedVolumes[seriesName]) {
+            // 1. Check last_accessed first
+            if (lastAccessedVolumes[seriesName]) {
                 const lastAccessed = seriesVolumes.find(v => v.volume === lastAccessedVolumes[seriesName]);
                 if (lastAccessed) {
                     displayVolume = lastAccessed;
+                }
+            }
+            
+            // 2. Then look for volumes with progress (only if no last_accessed)
+            if (displayVolume === seriesVolumes[0]) {
+                const volumesWithProgress = seriesVolumes.filter(v => v.page_idx > 0);
+                if (volumesWithProgress.length > 0) {
+                    // Find volume with highest page_idx
+                    displayVolume = volumesWithProgress.reduce((prev, current) => 
+                        (prev.page_idx > current.page_idx) ? prev : current
+                    );
                 }
             }
             
