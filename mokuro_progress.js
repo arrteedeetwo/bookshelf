@@ -83,13 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // 🖌️ Stil einfügen
   const style = document.createElement("style");
   style.textContent = `
-  #hamsti-nav-buttons {
-    position: fixed;
-    top: 42px;
-    z-index: 9999;
-    display: flex;         
-    flex-direction: row; 
-  }
+    #hamsti-nav-buttons {
+      position: fixed;
+      top: 42px;
+      z-index: 9999;
+      display: flex;         
+      flex-direction: row; 
+    }
 
     .hamsti-button {
       display: flex;

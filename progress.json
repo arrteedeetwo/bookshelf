@@ -1,0 +1,3482 @@
+[
+  {
+    "series": "Bread&Butter",
+    "volume": "Bread&Butter 01",
+    "path": "./manga/Bread&Butter/Bread&Butter 01.html",
+    "page_idx": 0,
+    "last_page_idx": 195,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "Bread&Butter",
+    "volume": "Bread&Butter 02",
+    "path": "./manga/Bread&Butter/Bread&Butter 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "Bronze",
+    "volume": "絶愛／BRONZE 01",
+    "path": "./manga/Bronze/絶愛／BRONZE 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "Bronze",
+    "volume": "絶愛／BRONZE 02",
+    "path": "./manga/Bronze/絶愛／BRONZE 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "CLAMP学園探偵団",
+    "volume": "CLAMP学園探偵団 01",
+    "path": "./manga/CLAMP学園探偵団/CLAMP学園探偵団 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "CLAMP学園探偵団",
+    "volume": "CLAMP学園探偵団 02",
+    "path": "./manga/CLAMP学園探偵団/CLAMP学園探偵団 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "Girlfriends",
+    "volume": "GIRL FRIENDS 01",
+    "path": "./manga/Girlfriends/GIRL FRIENDS 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_01",
+    "path": "./manga/Happiness/happiness_01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_02",
+    "path": "./manga/Happiness/happiness_02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_03",
+    "path": "./manga/Happiness/happiness_03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_04",
+    "path": "./manga/Happiness/happiness_04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_05",
+    "path": "./manga/Happiness/happiness_05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_06",
+    "path": "./manga/Happiness/happiness_06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_07",
+    "path": "./manga/Happiness/happiness_07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_08",
+    "path": "./manga/Happiness/happiness_08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_09",
+    "path": "./manga/Happiness/happiness_09.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "Happiness",
+    "volume": "happiness_10",
+    "path": "./manga/Happiness/happiness_10.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.png"
+  },
+  {
+    "series": "HGに恋するふたり",
+    "volume": "HGに恋するふたり 01",
+    "path": "./manga/HGに恋するふたり/HGに恋するふたり 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "HGに恋するふたり(1)【期間限定無料】  Page 0.png"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第01巻",
+    "path": "./manga/NANA―ナナ―/第01巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第01巻.mobile",
+    "path": "./manga/NANA―ナナ―/第01巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 184,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第02巻",
+    "path": "./manga/NANA―ナナ―/第02巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第02巻.mobile",
+    "path": "./manga/NANA―ナナ―/第02巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第03巻",
+    "path": "./manga/NANA―ナナ―/第03巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第03巻.mobile",
+    "path": "./manga/NANA―ナナ―/第03巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第04巻",
+    "path": "./manga/NANA―ナナ―/第04巻.html",
+    "page_idx": 192,
+    "last_page_idx": 193,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第04巻.mobile",
+    "path": "./manga/NANA―ナナ―/第04巻.mobile.html",
+    "page_idx": 192,
+    "last_page_idx": 193,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第05巻",
+    "path": "./manga/NANA―ナナ―/第05巻.html",
+    "page_idx": 95,
+    "last_page_idx": 193,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第05巻.mobile",
+    "path": "./manga/NANA―ナナ―/第05巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第06巻",
+    "path": "./manga/NANA―ナナ―/第06巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第06巻.mobile",
+    "path": "./manga/NANA―ナナ―/第06巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第07巻",
+    "path": "./manga/NANA―ナナ―/第07巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第07巻.mobile",
+    "path": "./manga/NANA―ナナ―/第07巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第08巻",
+    "path": "./manga/NANA―ナナ―/第08巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第08巻.mobile",
+    "path": "./manga/NANA―ナナ―/第08巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第09巻",
+    "path": "./manga/NANA―ナナ―/第09巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第09巻.mobile",
+    "path": "./manga/NANA―ナナ―/第09巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第10巻",
+    "path": "./manga/NANA―ナナ―/第10巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第10巻.mobile",
+    "path": "./manga/NANA―ナナ―/第10巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第11巻",
+    "path": "./manga/NANA―ナナ―/第11巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第11巻.mobile",
+    "path": "./manga/NANA―ナナ―/第11巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第12巻",
+    "path": "./manga/NANA―ナナ―/第12巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第12巻.mobile",
+    "path": "./manga/NANA―ナナ―/第12巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第13巻",
+    "path": "./manga/NANA―ナナ―/第13巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第13巻.mobile",
+    "path": "./manga/NANA―ナナ―/第13巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第14巻",
+    "path": "./manga/NANA―ナナ―/第14巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第14巻.mobile",
+    "path": "./manga/NANA―ナナ―/第14巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第15巻",
+    "path": "./manga/NANA―ナナ―/第15巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第15巻.mobile",
+    "path": "./manga/NANA―ナナ―/第15巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第16巻",
+    "path": "./manga/NANA―ナナ―/第16巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第16巻.mobile",
+    "path": "./manga/NANA―ナナ―/第16巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第17巻",
+    "path": "./manga/NANA―ナナ―/第17巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第17巻.mobile",
+    "path": "./manga/NANA―ナナ―/第17巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第18巻",
+    "path": "./manga/NANA―ナナ―/第18巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第18巻.mobile",
+    "path": "./manga/NANA―ナナ―/第18巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第19巻",
+    "path": "./manga/NANA―ナナ―/第19巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第19巻.mobile",
+    "path": "./manga/NANA―ナナ―/第19巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第20巻",
+    "path": "./manga/NANA―ナナ―/第20巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第20巻.mobile",
+    "path": "./manga/NANA―ナナ―/第20巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第21巻",
+    "path": "./manga/NANA―ナナ―/第21巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpeg"
+  },
+  {
+    "series": "NANA―ナナ―",
+    "volume": "第21巻.mobile",
+    "path": "./manga/NANA―ナナ―/第21巻.mobile.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "Piece",
+    "volume": "[芦原妃名子] Piece 第01巻",
+    "path": "./manga/Piece/[芦原妃名子] Piece 第01巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "01_#カバー1.jpg"
+  },
+  {
+    "series": "Piece",
+    "volume": "[芦原妃名子] Piece 第02巻",
+    "path": "./manga/Piece/[芦原妃名子] Piece 第02巻.html",
+    "page_idx": 46,
+    "last_page_idx": 195,
+    "cover_page": "02_#カバー.jpg"
+  },
+  {
+    "series": "Piece",
+    "volume": "[芦原妃名子] Piece 第03巻",
+    "path": "./manga/Piece/[芦原妃名子] Piece 第03巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "03_#カバー.jpg"
+  },
+  {
+    "series": "Piece",
+    "volume": "[芦原妃名子] Piece 第04巻",
+    "path": "./manga/Piece/[芦原妃名子] Piece 第04巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "04_#カバー.jpg"
+  },
+  {
+    "series": "Piece",
+    "volume": "[芦原妃名子] Piece 第05巻",
+    "path": "./manga/Piece/[芦原妃名子] Piece 第05巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "05_#カバー.jpg"
+  },
+  {
+    "series": "Sailor V",
+    "volume": "[武内直子] コードネームはセーラーV 第01巻",
+    "path": "./manga/Sailor V/[武内直子] コードネームはセーラーV 第01巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "01_000-a.jpg"
+  },
+  {
+    "series": "Sailor V",
+    "volume": "[武内直子] コードネームはセーラーV 第02巻",
+    "path": "./manga/Sailor V/[武内直子] コードネームはセーラーV 第02巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "(1).jpg"
+  },
+  {
+    "series": "Sailor V",
+    "volume": "[武内直子] コードネームはセーラーV 第03巻End",
+    "path": "./manga/Sailor V/[武内直子] コードネームはセーラーV 第03巻End.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "03_000-a.jpg"
+  },
+  {
+    "series": "Silent Witch",
+    "volume": "Silent Witch 1",
+    "path": "./manga/Silent Witch/Silent Witch 1.html",
+    "page_idx": 6,
+    "last_page_idx": 82,
+    "cover_page": "000.png"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 01",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "000hyousi.jpg"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 02",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 02.html",
+    "page_idx": 137,
+    "last_page_idx": 138,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 03",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 03.html",
+    "page_idx": 0,
+    "last_page_idx": 74,
+    "cover_page": "0001..jpg"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 04",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 05",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 06",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "Tokyo Babylon",
+    "volume": "[CLAMP] 東京BABYLON 07",
+    "path": "./manga/Tokyo Babylon/[CLAMP] 東京BABYLON 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星01",
+    "path": "./manga/あの頃の青い星/あの頃の青い星01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星02",
+    "path": "./manga/あの頃の青い星/あの頃の青い星02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星03",
+    "path": "./manga/あの頃の青い星/あの頃の青い星03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星04",
+    "path": "./manga/あの頃の青い星/あの頃の青い星04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星05",
+    "path": "./manga/あの頃の青い星/あの頃の青い星05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星06",
+    "path": "./manga/あの頃の青い星/あの頃の青い星06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "あの頃の青い星",
+    "volume": "あの頃の青い星07",
+    "path": "./manga/あの頃の青い星/あの頃の青い星07.html",
+    "page_idx": 169,
+    "last_page_idx": 170,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "おくれまして青春",
+    "volume": "おくれまして青春 01",
+    "path": "./manga/おくれまして青春/おくれまして青春 01.html",
+    "page_idx": 0,
+    "last_page_idx": 188,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "こいものがたり",
+    "volume": "こいものがたり 01",
+    "path": "./manga/こいものがたり/こいものがたり 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "こいものがたり",
+    "volume": "こいものがたり 02",
+    "path": "./manga/こいものがたり/こいものがたり 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "こういうのがいい",
+    "volume": "こういうのがいい 01",
+    "path": "./manga/こういうのがいい/こういうのがいい 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "こういうのがいい",
+    "volume": "こういうのがいい 02",
+    "path": "./manga/こういうのがいい/こういうのがいい 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こういうのがいい【期間限定無料】 2  Page 0.png"
+  },
+  {
+    "series": "こういうのがいい",
+    "volume": "こういうのがいい 03",
+    "path": "./manga/こういうのがいい/こういうのがいい 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こういうのがいい【期間限定無料】 3  Page 0.png"
+  },
+  {
+    "series": "こどものおもちゃ",
+    "volume": "【一般コミック】 小花美穂 「こどものおもちゃ 第05巻」",
+    "path": "./manga/こどものおもちゃ/【一般コミック】 小花美穂 「こどものおもちゃ 第05巻」.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こどものおもちゃ#05_001.jpg"
+  },
+  {
+    "series": "こどものおもちゃ",
+    "volume": "【一般コミック】 小花美穂 「こどものおもちゃ 第06巻」",
+    "path": "./manga/こどものおもちゃ/【一般コミック】 小花美穂 「こどものおもちゃ 第06巻」.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こどものおもちゃ#06_001.jpg"
+  },
+  {
+    "series": "こどものおもちゃ",
+    "volume": "【一般コミック】 小花美穂 「こどものおもちゃ 第07巻」",
+    "path": "./manga/こどものおもちゃ/【一般コミック】 小花美穂 「こどものおもちゃ 第07巻」.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こどものおもちゃ#07_001.jpg"
+  },
+  {
+    "series": "こどものおもちゃ",
+    "volume": "【一般コミック】 小花美穂 「こどものおもちゃ 第08巻」",
+    "path": "./manga/こどものおもちゃ/【一般コミック】 小花美穂 「こどものおもちゃ 第08巻」.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こどものおもちゃ#08_001.jpg"
+  },
+  {
+    "series": "こどものおもちゃ",
+    "volume": "【一般コミック】 小花美穂 「こどものおもちゃ 第09巻」",
+    "path": "./manga/こどものおもちゃ/【一般コミック】 小花美穂 「こどものおもちゃ 第09巻」.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "こどものおもちゃ#09_001.jpg"
+  },
+  {
+    "series": "こどものおもちゃ",
+    "volume": "【一般コミック】 小花美穂 「こどものおもちゃ 第10巻」",
+    "path": "./manga/こどものおもちゃ/【一般コミック】 小花美穂 「こどものおもちゃ 第10巻」.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "010-000.JPG"
+  },
+  {
+    "series": "しかのこのこのここしたんたん",
+    "volume": "しかのこのこのここしたんたん",
+    "path": "./manga/しかのこのこのここしたんたん/しかのこのこのここしたんたん.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】しかのこのこのここしたんたん（１）  Page 0.png"
+  },
+  {
+    "series": "すべては音が知っている",
+    "volume": "すべては音が知っている 01",
+    "path": "./manga/すべては音が知っている/すべては音が知っている 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "すべては音が知っている",
+    "volume": "すべては音が知っている 02",
+    "path": "./manga/すべては音が知っている/すべては音が知っている 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ちびまる子ちゃん",
+    "volume": "ちびまる子ちゃん 01 カラー版",
+    "path": "./manga/ちびまる子ちゃん/ちびまる子ちゃん 01 カラー版.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ちびまる子ちゃん カラー版【期間限定無料】 1  Page 0.png"
+  },
+  {
+    "series": "ときめきトゥナイト",
+    "volume": "ときめきトゥナイト 01",
+    "path": "./manga/ときめきトゥナイト/ときめきトゥナイト 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ときめきトゥナイト",
+    "volume": "ときめきトゥナイト 02",
+    "path": "./manga/ときめきトゥナイト/ときめきトゥナイト 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ときめきトゥナイト",
+    "volume": "ときめきトゥナイト 03",
+    "path": "./manga/ときめきトゥナイト/ときめきトゥナイト 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ときめきトゥナイト【期間限定無料】 3  Page 0.png"
+  },
+  {
+    "series": "となりの猫と恋知らず",
+    "volume": "となりの猫と恋知らず 01",
+    "path": "./manga/となりの猫と恋知らず/となりの猫と恋知らず 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0f50_tnrcat_1920_01_001.jpg"
+  },
+  {
+    "series": "となりの猫と恋知らず",
+    "volume": "となりの猫と恋知らず 02",
+    "path": "./manga/となりの猫と恋知らず/となりの猫と恋知らず 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0f50_tnrcat_1920_02_001.jpg"
+  },
+  {
+    "series": "となりの猫と恋知らず",
+    "volume": "となりの猫と恋知らず 03",
+    "path": "./manga/となりの猫と恋知らず/となりの猫と恋知らず 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0f50_tnrcat_1920_03_001.jpg"
+  },
+  {
+    "series": "となりの猫と恋知らず",
+    "volume": "となりの猫と恋知らず 04",
+    "path": "./manga/となりの猫と恋知らず/となりの猫と恋知らず 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0f50_tnrcat_1920_04_001.jpg"
+  },
+  {
+    "series": "となりの関くん",
+    "volume": "となりの関くん 第01巻",
+    "path": "./manga/となりの関くん/となりの関くん 第01巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "となりの関くん_1_001.jpg"
+  },
+  {
+    "series": "となりの関くん",
+    "volume": "となりの関くん 第02巻",
+    "path": "./manga/となりの関くん/となりの関くん 第02巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "となりの関くん_2_001.jpg"
+  },
+  {
+    "series": "となりの関くん",
+    "volume": "となりの関くん 第03巻",
+    "path": "./manga/となりの関くん/となりの関くん 第03巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "となりの関くん_3_001.jpg"
+  },
+  {
+    "series": "となりの関くん",
+    "volume": "となりの関くん 第05巻",
+    "path": "./manga/となりの関くん/となりの関くん 第05巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "となりの関くん_5_001.jpg"
+  },
+  {
+    "series": "ねこむすめ道草日記",
+    "volume": "ねこむすめ道草日記 01",
+    "path": "./manga/ねこむすめ道草日記/ねこむすめ道草日記 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "はなにあらし",
+    "volume": "はなにあらし 01",
+    "path": "./manga/はなにあらし/はなにあらし 01.html",
+    "page_idx": 162,
+    "last_page_idx": 163,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ひなゆり冒険記",
+    "volume": "ひなゆり冒険記 01",
+    "path": "./manga/ひなゆり冒険記/ひなゆり冒険記 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "ひなゆり冒険記",
+    "volume": "ひなゆり冒険記 02",
+    "path": "./manga/ひなゆり冒険記/ひなゆり冒険記 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "ひなゆり冒険記",
+    "volume": "ひなゆり冒険記 03",
+    "path": "./manga/ひなゆり冒険記/ひなゆり冒険記 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 01",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 02",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 03",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 04",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 05",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 06",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "ふらいんぐうぃっち",
+    "volume": "ふらいんぐうぃっち 07",
+    "path": "./manga/ふらいんぐうぃっち/ふらいんぐうぃっち 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "また、同じ夢を見ていた",
+    "volume": "また、同じ夢を見ていた 01",
+    "path": "./manga/また、同じ夢を見ていた/また、同じ夢を見ていた 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "また、同じ夢を見ていた",
+    "volume": "また、同じ夢を見ていた 02",
+    "path": "./manga/また、同じ夢を見ていた/また、同じ夢を見ていた 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "また、同じ夢を見ていた",
+    "volume": "また、同じ夢を見ていた 03",
+    "path": "./manga/また、同じ夢を見ていた/また、同じ夢を見ていた 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "みなと商事コインランドリー",
+    "volume": "みなと商事コインランドリー 01",
+    "path": "./manga/みなと商事コインランドリー/みなと商事コインランドリー 01.html",
+    "page_idx": 0,
+    "last_page_idx": 196,
+    "cover_page": "01 - 001.png"
+  },
+  {
+    "series": "みなと商事コインランドリー",
+    "volume": "みなと商事コインランドリー 02",
+    "path": "./manga/みなと商事コインランドリー/みなと商事コインランドリー 02.html",
+    "page_idx": 0,
+    "last_page_idx": 186,
+    "cover_page": "02 - 001.png"
+  },
+  {
+    "series": "みなと商事コインランドリー",
+    "volume": "みなと商事コインランドリー 03",
+    "path": "./manga/みなと商事コインランドリー/みなと商事コインランドリー 03.html",
+    "page_idx": 169,
+    "last_page_idx": 170,
+    "cover_page": "03 - 001.png"
+  },
+  {
+    "series": "みなと商事コインランドリー",
+    "volume": "みなと商事コインランドリー 04",
+    "path": "./manga/みなと商事コインランドリー/みなと商事コインランドリー 04.html",
+    "page_idx": 172,
+    "last_page_idx": 173,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "みなと商事コインランドリー",
+    "volume": "みなと商事コインランドリー 05",
+    "path": "./manga/みなと商事コインランドリー/みなと商事コインランドリー 05.html",
+    "page_idx": 5,
+    "last_page_idx": 173,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 1",
+    "path": "./manga/やがて君になる/やがて君になる 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 2",
+    "path": "./manga/やがて君になる/やがて君になる 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 3",
+    "path": "./manga/やがて君になる/やがて君になる 3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 4",
+    "path": "./manga/やがて君になる/やがて君になる 4.html",
+    "page_idx": 0,
+    "last_page_idx": 185,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 5",
+    "path": "./manga/やがて君になる/やがて君になる 5.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 6",
+    "path": "./manga/やがて君になる/やがて君になる 6.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 7",
+    "path": "./manga/やがて君になる/やがて君になる 7.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "やがて君になる",
+    "volume": "やがて君になる 8",
+    "path": "./manga/やがて君になる/やがて君になる 8.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ゆりでなるvえすぽわーる",
+    "volume": "ゆりでなるvえすぽわーる 01",
+    "path": "./manga/ゆりでなるvえすぽわーる/ゆりでなるvえすぽわーる 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ゆりでなるvえすぽわーる",
+    "volume": "ゆりでなるvえすぽわーる 02",
+    "path": "./manga/ゆりでなるvえすぽわーる/ゆりでなるvえすぽわーる 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ゆりでなるvえすぽわーる",
+    "volume": "ゆりでなるvえすぽわーる 03",
+    "path": "./manga/ゆりでなるvえすぽわーる/ゆりでなるvえすぽわーる 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第01巻",
+    "path": "./manga/よつばと!/よつばと! 第01巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "よつばと!_1_000-a.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第02巻",
+    "path": "./manga/よつばと!/よつばと! 第02巻.html",
+    "page_idx": 12,
+    "last_page_idx": 201,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第03巻",
+    "path": "./manga/よつばと!/よつばと! 第03巻.html",
+    "page_idx": 8,
+    "last_page_idx": 192,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第05巻",
+    "path": "./manga/よつばと!/よつばと! 第05巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第06巻",
+    "path": "./manga/よつばと!/よつばと! 第06巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第07巻",
+    "path": "./manga/よつばと!/よつばと! 第07巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第08巻",
+    "path": "./manga/よつばと!/よつばと! 第08巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第09巻",
+    "path": "./manga/よつばと!/よつばと! 第09巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第10巻",
+    "path": "./manga/よつばと!/よつばと! 第10巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第11巻",
+    "path": "./manga/よつばと!/よつばと! 第11巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第12巻",
+    "path": "./manga/よつばと!/よつばと! 第12巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第13巻",
+    "path": "./manga/よつばと!/よつばと! 第13巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "よつばと!",
+    "volume": "よつばと! 第14巻",
+    "path": "./manga/よつばと!/よつばと! 第14巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "アクロトリップ",
+    "volume": "アクロトリップ 01",
+    "path": "./manga/アクロトリップ/アクロトリップ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "アクロトリップ",
+    "volume": "アクロトリップ 02",
+    "path": "./manga/アクロトリップ/アクロトリップ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "アクロトリップ",
+    "volume": "アクロトリップ 03",
+    "path": "./manga/アクロトリップ/アクロトリップ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "アクロトリップ",
+    "volume": "アクロトリップ 04",
+    "path": "./manga/アクロトリップ/アクロトリップ 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "アクロトリップ",
+    "volume": "アクロトリップ 05",
+    "path": "./manga/アクロトリップ/アクロトリップ 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オトメン(乙男)",
+    "volume": "オトメン(乙男) 第01巻",
+    "path": "./manga/オトメン(乙男)/オトメン(乙男) 第01巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "オトメン(乙男)",
+    "volume": "オトメン(乙男) 第02巻",
+    "path": "./manga/オトメン(乙男)/オトメン(乙男) 第02巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "オトメン(乙男)",
+    "volume": "オトメン(乙男) 第03巻",
+    "path": "./manga/オトメン(乙男)/オトメン(乙男) 第03巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "オトメン(乙男)",
+    "volume": "オトメン(乙男) 第04巻",
+    "path": "./manga/オトメン(乙男)/オトメン(乙男) 第04巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "オトメン(乙男)",
+    "volume": "オトメン(乙男) 第05巻",
+    "path": "./manga/オトメン(乙男)/オトメン(乙男) 第05巻.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 01",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 02",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 03",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 04",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 05",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 06",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 07",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "オレん家のフロ事情",
+    "volume": "オレん家のフロ事情 08",
+    "path": "./manga/オレん家のフロ事情/オレん家のフロ事情 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ギャルがシルバニアファミリーを溺愛したら。",
+    "volume": "ギャルバニア 01",
+    "path": "./manga/ギャルがシルバニアファミリーを溺愛したら。/ギャルバニア 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】ギャルがシルバニアファミリーを溺愛したら。＃ギャルバニア  Page 0.png"
+  },
+  {
+    "series": "クジマ歌えば家ほろろ",
+    "volume": "クジマ歌えば家ほろろ 01",
+    "path": "./manga/クジマ歌えば家ほろろ/クジマ歌えば家ほろろ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-0001.jpg"
+  },
+  {
+    "series": "コレットは死ぬことにした",
+    "volume": "コレットは死ぬことにした 01",
+    "path": "./manga/コレットは死ぬことにした/コレットは死ぬことにした 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】コレットは死ぬことにした　1巻  Page 0.png"
+  },
+  {
+    "series": "コレットは死ぬことにした",
+    "volume": "コレットは死ぬことにした 02",
+    "path": "./manga/コレットは死ぬことにした/コレットは死ぬことにした 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】コレットは死ぬことにした　2巻  Page 0.png"
+  },
+  {
+    "series": "コレットは死ぬことにした",
+    "volume": "コレットは死ぬことにした 03",
+    "path": "./manga/コレットは死ぬことにした/コレットは死ぬことにした 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】コレットは死ぬことにした　3巻  Page 0.png"
+  },
+  {
+    "series": "コレットは死ぬことにした",
+    "volume": "コレットは死ぬことにした 04",
+    "path": "./manga/コレットは死ぬことにした/コレットは死ぬことにした 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】コレットは死ぬことにした　4巻  Page 0.png"
+  },
+  {
+    "series": "コレットは死ぬことにした",
+    "volume": "コレットは死ぬことにした 05",
+    "path": "./manga/コレットは死ぬことにした/コレットは死ぬことにした 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】コレットは死ぬことにした　5巻  Page 0.png"
+  },
+  {
+    "series": "シュガシュガルーン",
+    "volume": "シュガシュガルーン 01",
+    "path": "./manga/シュガシュガルーン/シュガシュガルーン 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "シュガシュガルーン",
+    "volume": "シュガシュガルーン 02",
+    "path": "./manga/シュガシュガルーン/シュガシュガルーン 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 02",
+    "path": "./manga/ダンダダン/ダンダダン 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 03",
+    "path": "./manga/ダンダダン/ダンダダン 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 04",
+    "path": "./manga/ダンダダン/ダンダダン 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 05",
+    "path": "./manga/ダンダダン/ダンダダン 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 06",
+    "path": "./manga/ダンダダン/ダンダダン 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 07",
+    "path": "./manga/ダンダダン/ダンダダン 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 08",
+    "path": "./manga/ダンダダン/ダンダダン 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 09",
+    "path": "./manga/ダンダダン/ダンダダン 09.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "ダンダダン",
+    "volume": "ダンダダン 10",
+    "path": "./manga/ダンダダン/ダンダダン 10.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover_000.jpg"
+  },
+  {
+    "series": "テルマエ・ロマエ",
+    "volume": "テルマエ・ロマエ 01",
+    "path": "./manga/テルマエ・ロマエ/テルマエ・ロマエ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "テルマエ・ロマエ",
+    "volume": "テルマエ・ロマエ 02",
+    "path": "./manga/テルマエ・ロマエ/テルマエ・ロマエ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "テルマエ・ロマエ",
+    "volume": "テルマエ・ロマエ 03",
+    "path": "./manga/テルマエ・ロマエ/テルマエ・ロマエ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "テルマエ・ロマエ",
+    "volume": "テルマエ・ロマエ 04",
+    "path": "./manga/テルマエ・ロマエ/テルマエ・ロマエ 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "テルマエ・ロマエ",
+    "volume": "テルマエ・ロマエ 05",
+    "path": "./manga/テルマエ・ロマエ/テルマエ・ロマエ 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "テルマエ・ロマエ",
+    "volume": "テルマエ・ロマエ 06",
+    "path": "./manga/テルマエ・ロマエ/テルマエ・ロマエ 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ニッターズハイ！",
+    "volume": "ニッターズハイ！ 01",
+    "path": "./manga/ニッターズハイ！/ニッターズハイ！ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 187,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "ニッターズハイ！",
+    "volume": "ニッターズハイ！ 02",
+    "path": "./manga/ニッターズハイ！/ニッターズハイ！ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "ニッターズハイ！",
+    "volume": "ニッターズハイ！ 03",
+    "path": "./manga/ニッターズハイ！/ニッターズハイ！ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "ニッターズハイ！",
+    "volume": "ニッターズハイ！ 04",
+    "path": "./manga/ニッターズハイ！/ニッターズハイ！ 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "ノラガミ",
+    "volume": "ノラガミ 01",
+    "path": "./manga/ノラガミ/ノラガミ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】ノラガミ（１）  Page 0.png"
+  },
+  {
+    "series": "ノラガミ",
+    "volume": "ノラガミ 02",
+    "path": "./manga/ノラガミ/ノラガミ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】ノラガミ（２）  Page 0.png"
+  },
+  {
+    "series": "ノラガミ",
+    "volume": "ノラガミ 03",
+    "path": "./manga/ノラガミ/ノラガミ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】ノラガミ（３）  Page 0.png"
+  },
+  {
+    "series": "ハイキュー！！",
+    "volume": "ハイキュー 01",
+    "path": "./manga/ハイキュー！！/ハイキュー 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ハイキュー！！ カラー版【期間限定無料】 1  Page 0.png"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 01",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 02",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 03",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 04",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 05",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 06",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 07",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハニーレモンソーダ",
+    "volume": "ハニーレモンソーダ 08",
+    "path": "./manga/ハニーレモンソーダ/ハニーレモンソーダ 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ハローモーニングスター",
+    "volume": "ハローモーニングスター 1",
+    "path": "./manga/ハローモーニングスター/ハローモーニングスター 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ババンババンバンバンパイア",
+    "volume": "ババンババンバンバンパイア 01",
+    "path": "./manga/ババンババンバンバンパイア/ババンババンバンバンパイア 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "ヒカルの碁",
+    "volume": "ヒカルの碁 01",
+    "path": "./manga/ヒカルの碁/ヒカルの碁 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ヒカルの碁【期間限定無料】 1  Page 0.png"
+  },
+  {
+    "series": "ヒカルの碁",
+    "volume": "ヒカルの碁 02",
+    "path": "./manga/ヒカルの碁/ヒカルの碁 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ヒカルの碁【期間限定無料】 2  Page 0.png"
+  },
+  {
+    "series": "ブナの森のアリア",
+    "volume": "ブナの森のアリア 01",
+    "path": "./manga/ブナの森のアリア/ブナの森のアリア 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ブナの森のアリア 第1巻【期間限定無料】  Page 0.png"
+  },
+  {
+    "series": "ブナの森のアリア",
+    "volume": "ブナの森のアリア 02",
+    "path": "./manga/ブナの森のアリア/ブナの森のアリア 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ブナの森のアリア 第2巻【期間限定無料】  Page 0.png"
+  },
+  {
+    "series": "ブナの森のアリア",
+    "volume": "ブナの森のアリア 03",
+    "path": "./manga/ブナの森のアリア/ブナの森のアリア 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "ブナの森のアリア 第3巻【期間限定無料】  Page 0.png"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 1",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "000.png"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 2",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "â}â}âî000.jpg"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 3",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "â}â}âîL015.jpg"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 4",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 4.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "000.png"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 5",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 5.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 6",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 6.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "ママレード・ボーイ little",
+    "volume": "ママレード・ボーイ little 7",
+    "path": "./manga/ママレード・ボーイ little/ママレード・ボーイ little 7.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "marmalade_boy_little_7_000.jpg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 01",
+    "path": "./manga/メイドインアビス/メイドインアビス 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 02",
+    "path": "./manga/メイドインアビス/メイドインアビス 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 03",
+    "path": "./manga/メイドインアビス/メイドインアビス 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 04",
+    "path": "./manga/メイドインアビス/メイドインアビス 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 05",
+    "path": "./manga/メイドインアビス/メイドインアビス 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 06",
+    "path": "./manga/メイドインアビス/メイドインアビス 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メイドインアビス",
+    "volume": "メイドインアビス 07",
+    "path": "./manga/メイドインアビス/メイドインアビス 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "メダリスト",
+    "volume": "メダリスト 01",
+    "path": "./manga/メダリスト/メダリスト 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】メダリスト（１）  Page 0.png"
+  },
+  {
+    "series": "メダリスト",
+    "volume": "メダリスト 02",
+    "path": "./manga/メダリスト/メダリスト 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】メダリスト（２）  Page 0.png"
+  },
+  {
+    "series": "メダリスト",
+    "volume": "メダリスト 03",
+    "path": "./manga/メダリスト/メダリスト 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】メダリスト（３）  Page 0.png"
+  },
+  {
+    "series": "ラブ・バレット",
+    "volume": "ラブ・バレット 01",
+    "path": "./manga/ラブ・バレット/ラブ・バレット 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった",
+    "volume": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 01",
+    "path": "./manga/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった",
+    "volume": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 02",
+    "path": "./manga/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった",
+    "volume": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 03",
+    "path": "./manga/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった",
+    "volume": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 04",
+    "path": "./manga/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった/乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "乙嫁語り",
+    "volume": "乙嫁語り 01",
+    "path": "./manga/乙嫁語り/乙嫁語り 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "事情を知らない転校生がグイグイくる",
+    "volume": "事情を知らない転校生がグイグイくる 01",
+    "path": "./manga/事情を知らない転校生がグイグイくる/事情を知らない転校生がグイグイくる 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "JizyoGuigui01_000a.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第01巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第01巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第02巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第02巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第03巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第03巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第04巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第04巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第05巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第05巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第06巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第06巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第07巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第07巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第08巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第08巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第09巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第09巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第10巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第10巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第11巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第11巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第12巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第12巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第13巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第13巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "五等分の花嫁",
+    "volume": "五等分の花嫁　フルカラー版　第14巻　(Upscaled)",
+    "path": "./manga/五等分の花嫁/五等分の花嫁　フルカラー版　第14巻　(Upscaled).html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "今日はカノジョがいないから",
+    "volume": "今日はカノジョがいないから01",
+    "path": "./manga/今日はカノジョがいないから/今日はカノジョがいないから01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpg"
+  },
+  {
+    "series": "今日はカノジョがいないから",
+    "volume": "今日はカノジョがいないから02",
+    "path": "./manga/今日はカノジョがいないから/今日はカノジョがいないから02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "今日はカノジョがいないから",
+    "volume": "今日はカノジョがいないから03",
+    "path": "./manga/今日はカノジョがいないから/今日はカノジョがいないから03.html",
+    "page_idx": 0,
+    "last_page_idx": 171,
+    "cover_page": "i-000.jpg"
+  },
+  {
+    "series": "今日はカノジョがいないから",
+    "volume": "今日はカノジョがいないから04",
+    "path": "./manga/今日はカノジョがいないから/今日はカノジョがいないから04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-000.jpg"
+  },
+  {
+    "series": "今日はカノジョがいないから",
+    "volume": "今日はカノジョがいないから05",
+    "path": "./manga/今日はカノジョがいないから/今日はカノジョがいないから05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 01",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 02",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 03",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 04",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 05",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 06",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 07",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 08",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐々木と宮野",
+    "volume": "佐々木と宮野 09",
+    "path": "./manga/佐々木と宮野/佐々木と宮野 09.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "佐伯さんは眠ってる",
+    "volume": "佐伯さんは眠ってる 01",
+    "path": "./manga/佐伯さんは眠ってる/佐伯さんは眠ってる 01.html",
+    "page_idx": 146,
+    "last_page_idx": 147,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 01",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 166,
+    "cover_page": "0000.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 02",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 168,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 03",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 168,
+    "cover_page": "0000.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 04",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 04.html",
+    "page_idx": 0,
+    "last_page_idx": 168,
+    "cover_page": "0000.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 05",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 05.html",
+    "page_idx": 0,
+    "last_page_idx": 168,
+    "cover_page": "0000.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 06",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 06.html",
+    "page_idx": 0,
+    "last_page_idx": 168,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 07",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 07.html",
+    "page_idx": 0,
+    "last_page_idx": 185,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 08",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 08.html",
+    "page_idx": 0,
+    "last_page_idx": 184,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 09",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 09.html",
+    "page_idx": 0,
+    "last_page_idx": 184,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 10",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 10.html",
+    "page_idx": 0,
+    "last_page_idx": 152,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 11",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 11.html",
+    "page_idx": 0,
+    "last_page_idx": 168,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "僕の心のヤバイやつ",
+    "volume": "僕の心のヤバイやつ 12",
+    "path": "./manga/僕の心のヤバイやつ/僕の心のヤバイやつ 12.html",
+    "page_idx": 150,
+    "last_page_idx": 152,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "先輩がうざい後輩の話",
+    "volume": "先輩がうざい後輩の話 01",
+    "path": "./manga/先輩がうざい後輩の話/先輩がうざい後輩の話 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "先輩がうざい後輩の話_ 1　【期間限定無料】  Page 0.png"
+  },
+  {
+    "series": "先輩がうざい後輩の話",
+    "volume": "先輩がうざい後輩の話 02",
+    "path": "./manga/先輩がうざい後輩の話/先輩がうざい後輩の話 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "先輩がうざい後輩の話_ 2　【期間限定無料】  Page 0.png"
+  },
+  {
+    "series": "君には届かない",
+    "volume": "君には届かない 1",
+    "path": "./manga/君には届かない/君には届かない 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "君には届かない",
+    "volume": "君には届かない 2",
+    "path": "./manga/君には届かない/君には届かない 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "君には届かない",
+    "volume": "君には届かない 3",
+    "path": "./manga/君には届かない/君には届かない 3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "君には届かない",
+    "volume": "君には届かない 4",
+    "path": "./manga/君には届かない/君には届かない 4.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "君には届かない",
+    "volume": "君には届かない 5",
+    "path": "./manga/君には届かない/君には届かない 5.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "君には届かない",
+    "volume": "君には届かない 6",
+    "path": "./manga/君には届かない/君には届かない 6.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "夏目友人帳",
+    "volume": "夏目友人帳 01",
+    "path": "./manga/夏目友人帳/夏目友人帳 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "夏目友人帳",
+    "volume": "夏目友人帳 02",
+    "path": "./manga/夏目友人帳/夏目友人帳 02.html",
+    "page_idx": 2,
+    "last_page_idx": 191,
+    "cover_page": "【期間限定　無料お試し版】夏目友人帳　2巻  Page 0.png"
+  },
+  {
+    "series": "夏目友人帳",
+    "volume": "夏目友人帳 03",
+    "path": "./manga/夏目友人帳/夏目友人帳 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】夏目友人帳　3巻  Page 0.png"
+  },
+  {
+    "series": "夏目友人帳",
+    "volume": "夏目友人帳 04",
+    "path": "./manga/夏目友人帳/夏目友人帳 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】夏目友人帳　4巻  Page 0.png"
+  },
+  {
+    "series": "夏目友人帳",
+    "volume": "夏目友人帳 05",
+    "path": "./manga/夏目友人帳/夏目友人帳 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】夏目友人帳　5巻  Page 0.png"
+  },
+  {
+    "series": "天使禁猟区",
+    "volume": "天使禁猟区 01",
+    "path": "./manga/天使禁猟区/天使禁猟区 01.html",
+    "page_idx": 8,
+    "last_page_idx": 208,
+    "cover_page": "“V‹Ö01_0000.jpg"
+  },
+  {
+    "series": "太陽よりも眩しい星",
+    "volume": "太陽よりも眩しい星 01",
+    "path": "./manga/太陽よりも眩しい星/太陽よりも眩しい星 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "太陽よりも眩しい星【期間限定無料】 1  Page 0.png"
+  },
+  {
+    "series": "太陽よりも眩しい星",
+    "volume": "太陽よりも眩しい星 02",
+    "path": "./manga/太陽よりも眩しい星/太陽よりも眩しい星 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "太陽よりも眩しい星【期間限定無料】 2  Page 0.png"
+  },
+  {
+    "series": "女装してめんどくさい事になってるネクラとヤンキーの両片想い",
+    "volume": "女装して 01",
+    "path": "./manga/女装してめんどくさい事になってるネクラとヤンキーの両片想い/女装して 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpeg"
+  },
+  {
+    "series": "女装してめんどくさい事になってるネクラとヤンキーの両片想い",
+    "volume": "女装して 02",
+    "path": "./manga/女装してめんどくさい事になってるネクラとヤンキーの両片想い/女装して 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00000.jpg"
+  },
+  {
+    "series": "女装してめんどくさい事になってるネクラとヤンキーの両片想い",
+    "volume": "女装して 03",
+    "path": "./manga/女装してめんどくさい事になってるネクラとヤンキーの両片想い/女装して 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "姫様“拷問”の時間です",
+    "volume": "姫様“拷問”の時間です 01",
+    "path": "./manga/姫様“拷問”の時間です/姫様“拷問”の時間です 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "姫様“拷問”の時間です【期間限定無料】 1  Page 0.png"
+  },
+  {
+    "series": "学ランの中までさわって欲しい",
+    "volume": "学ランの中までさわって欲しい 01",
+    "path": "./manga/学ランの中までさわって欲しい/学ランの中までさわって欲しい 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-0001.jpg"
+  },
+  {
+    "series": "学ランの中までさわって欲しい",
+    "volume": "学ランの中までさわって欲しい 02",
+    "path": "./manga/学ランの中までさわって欲しい/学ランの中までさわって欲しい 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-0001.jpg"
+  },
+  {
+    "series": "学ランの中までさわって欲しい",
+    "volume": "学ランの中までさわって欲しい その先 01",
+    "path": "./manga/学ランの中までさわって欲しい/学ランの中までさわって欲しい その先 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-0001.jpg"
+  },
+  {
+    "series": "学ランの中までさわって欲しい",
+    "volume": "学ランの中までさわって欲しい その先 02",
+    "path": "./manga/学ランの中までさわって欲しい/学ランの中までさわって欲しい その先 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-0001.jpg"
+  },
+  {
+    "series": "宇宙を駆けるよだか",
+    "volume": "宇宙を駆けるよだか 01",
+    "path": "./manga/宇宙を駆けるよだか/宇宙を駆けるよだか 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "宇宙を駆けるよだか",
+    "volume": "宇宙を駆けるよだか 02",
+    "path": "./manga/宇宙を駆けるよだか/宇宙を駆けるよだか 02.html",
+    "page_idx": 186,
+    "last_page_idx": 187,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "宇宙を駆けるよだか",
+    "volume": "宇宙を駆けるよだか 03",
+    "path": "./manga/宇宙を駆けるよだか/宇宙を駆けるよだか 03.html",
+    "page_idx": 210,
+    "last_page_idx": 211,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 01",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 02",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 03",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00002.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 04",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 05",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 06",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 06.html",
+    "page_idx": 150,
+    "last_page_idx": 185,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 07",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 08",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "山田くんとLv999の恋をする",
+    "volume": "山田くんとLv999の恋をする 09",
+    "path": "./manga/山田くんとLv999の恋をする/山田くんとLv999の恋をする 09.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "彼女、お借りします",
+    "volume": "彼女、お借りします 01",
+    "path": "./manga/彼女、お借りします/彼女、お借りします 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "彼女、お借りします",
+    "volume": "彼女、お借りします 02",
+    "path": "./manga/彼女、お借りします/彼女、お借りします 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "徒然日和",
+    "volume": "徒然日和 1",
+    "path": "./manga/徒然日和/徒然日和 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "徒然日和",
+    "volume": "徒然日和 2",
+    "path": "./manga/徒然日和/徒然日和 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "徒然日和",
+    "volume": "徒然日和 3",
+    "path": "./manga/徒然日和/徒然日和 3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "推しに甘噛み",
+    "volume": "推しに甘噛み 01",
+    "path": "./manga/推しに甘噛み/推しに甘噛み 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "Screenshot_20250427-203724.png"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(01)　日本のはじまり　旧石器～縄文・弥生～古墳時代",
+    "path": "./manga/日本の歴史/日本の歴史(01)　日本のはじまり　旧石器～縄文・弥生～古墳時代.html",
+    "page_idx": 55,
+    "last_page_idx": 209,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(02)　飛鳥朝廷と仏教　飛鳥～奈良時代",
+    "path": "./manga/日本の歴史/日本の歴史(02)　飛鳥朝廷と仏教　飛鳥～奈良時代.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(03)　雅なる平安貴族　平安時代前期",
+    "path": "./manga/日本の歴史/日本の歴史(03)　雅なる平安貴族　平安時代前期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(04)　武士の目覚め　平安時代後期",
+    "path": "./manga/日本の歴史/日本の歴史(04)　武士の目覚め　平安時代後期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(05)　いざ、鎌倉　鎌倉時代",
+    "path": "./manga/日本の歴史/日本の歴史(05)　いざ、鎌倉　鎌倉時代.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(06)　二つの朝廷　南北朝～室町時代前期",
+    "path": "./manga/日本の歴史/日本の歴史(06)　二つの朝廷　南北朝～室町時代前期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(07)　戦国大名の登場　室町時代中期～戦国時代",
+    "path": "./manga/日本の歴史/日本の歴史(07)　戦国大名の登場　室町時代中期～戦国時代.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(08)　天下統一の戦い　安土桃山時代",
+    "path": "./manga/日本の歴史/日本の歴史(08)　天下統一の戦い　安土桃山時代.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(09)　江戸幕府、始動　江戸時代前期",
+    "path": "./manga/日本の歴史/日本の歴史(09)　江戸幕府、始動　江戸時代前期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(10)　花咲く町人文化　江戸時代中期",
+    "path": "./manga/日本の歴史/日本の歴史(10)　花咲く町人文化　江戸時代中期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(11)　黒船と開国　江戸時代後期",
+    "path": "./manga/日本の歴史/日本の歴史(11)　黒船と開国　江戸時代後期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(12)　明治維新と新政府　明治時代前期",
+    "path": "./manga/日本の歴史/日本の歴史(12)　明治維新と新政府　明治時代前期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(13)　近代国家への道　明治時代後期",
+    "path": "./manga/日本の歴史/日本の歴史(13)　近代国家への道　明治時代後期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(14)　大正デモクラシー　大正～昭和時代初期",
+    "path": "./manga/日本の歴史/日本の歴史(14)　大正デモクラシー　大正～昭和時代初期.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "日本の歴史",
+    "volume": "日本の歴史(15)　戦争、そして現代へ　昭和時代～平成",
+    "path": "./manga/日本の歴史/日本の歴史(15)　戦争、そして現代へ　昭和時代～平成.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "星降る王国のニナ",
+    "volume": "星降る王国のニナ 01",
+    "path": "./manga/星降る王国のニナ/星降る王国のニナ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】星降る王国のニナ（１）  Page 0.png"
+  },
+  {
+    "series": "星降る王国のニナ",
+    "volume": "星降る王国のニナ 02",
+    "path": "./manga/星降る王国のニナ/星降る王国のニナ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】星降る王国のニナ（２）【電子限定描きおろし特典つき】  Page 0.png"
+  },
+  {
+    "series": "星降る王国のニナ",
+    "volume": "星降る王国のニナ 03",
+    "path": "./manga/星降る王国のニナ/星降る王国のニナ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】星降る王国のニナ（３）  Page 0.png"
+  },
+  {
+    "series": "東京ミュウミュウ",
+    "volume": "東京ミュウミュウ 01",
+    "path": "./manga/東京ミュウミュウ/東京ミュウミュウ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "東京ミュウミュウ",
+    "volume": "東京ミュウミュウ 02",
+    "path": "./manga/東京ミュウミュウ/東京ミュウミュウ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "東京ミュウミュウ",
+    "volume": "東京ミュウミュウ 03",
+    "path": "./manga/東京ミュウミュウ/東京ミュウミュウ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "桜蘭高校ホスト部",
+    "volume": "1",
+    "path": "./manga/桜蘭高校ホスト部/1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "桜蘭高校ホスト部",
+    "volume": "2",
+    "path": "./manga/桜蘭高校ホスト部/2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "桜蘭高校ホスト部",
+    "volume": "3",
+    "path": "./manga/桜蘭高校ホスト部/3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "桜蘭高校ホスト部",
+    "volume": "4",
+    "path": "./manga/桜蘭高校ホスト部/4.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "桜蘭高校ホスト部",
+    "volume": "5",
+    "path": "./manga/桜蘭高校ホスト部/5.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "桜蘭高校ホスト部",
+    "volume": "Bookshelf",
+    "path": "./manga/桜蘭高校ホスト部/Bookshelf.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "水玉ハニーボーイ",
+    "volume": "水玉ハニーボーイ 01",
+    "path": "./manga/水玉ハニーボーイ/水玉ハニーボーイ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】水玉ハニーボーイ　1巻  Page 0.png"
+  },
+  {
+    "series": "水玉ハニーボーイ",
+    "volume": "水玉ハニーボーイ 02",
+    "path": "./manga/水玉ハニーボーイ/水玉ハニーボーイ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】水玉ハニーボーイ　2巻  Page 0.png"
+  },
+  {
+    "series": "波うららかに、めおと日和",
+    "volume": "波うららかに、めおと日和 01",
+    "path": "./manga/波うららかに、めおと日和/波うららかに、めおと日和 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "Screenshot_20250509-204509.png"
+  },
+  {
+    "series": "波うららかに、めおと日和",
+    "volume": "波うららかに、めおと日和 02",
+    "path": "./manga/波うららかに、めおと日和/波うららかに、めおと日和 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "Screenshot_20250510-203331.png"
+  },
+  {
+    "series": "消えた初恋",
+    "volume": "消えた初恋 04",
+    "path": "./manga/消えた初恋/消えた初恋 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "消えた初恋",
+    "volume": "消えた初恋 05",
+    "path": "./manga/消えた初恋/消えた初恋 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "消えた初恋",
+    "volume": "消えた初恋 06",
+    "path": "./manga/消えた初恋/消えた初恋 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "消えた初恋",
+    "volume": "消えた初恋 07",
+    "path": "./manga/消えた初恋/消えた初恋 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "消えた初恋",
+    "volume": "消えた初恋 08",
+    "path": "./manga/消えた初恋/消えた初恋 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "消えた初恋",
+    "volume": "消えた初恋 09",
+    "path": "./manga/消えた初恋/消えた初恋 09.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "真月譚 月姫",
+    "volume": "真月譚 月姫 01",
+    "path": "./manga/真月譚 月姫/真月譚 月姫 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "真月譚 月姫",
+    "volume": "真月譚 月姫 02",
+    "path": "./manga/真月譚 月姫/真月譚 月姫 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "真月譚 月姫",
+    "volume": "真月譚 月姫 03",
+    "path": "./manga/真月譚 月姫/真月譚 月姫 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "真月譚 月姫",
+    "volume": "真月譚 月姫 04",
+    "path": "./manga/真月譚 月姫/真月譚 月姫 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "真月譚 月姫",
+    "volume": "真月譚 月姫 05",
+    "path": "./manga/真月譚 月姫/真月譚 月姫 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "神さま学校の落ちこぼれ",
+    "volume": "神さま学校の落ちこぼれ 01",
+    "path": "./manga/神さま学校の落ちこぼれ/神さま学校の落ちこぼれ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "神さま学校の落ちこぼれ",
+    "volume": "神さま学校の落ちこぼれ 02",
+    "path": "./manga/神さま学校の落ちこぼれ/神さま学校の落ちこぼれ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "神さま学校の落ちこぼれ",
+    "volume": "神さま学校の落ちこぼれ 03",
+    "path": "./manga/神さま学校の落ちこぼれ/神さま学校の落ちこぼれ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "神さま学校の落ちこぼれ",
+    "volume": "神さま学校の落ちこぼれ 04",
+    "path": "./manga/神さま学校の落ちこぼれ/神さま学校の落ちこぼれ 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "神さま学校の落ちこぼれ",
+    "volume": "神さま学校の落ちこぼれ 05",
+    "path": "./manga/神さま学校の落ちこぼれ/神さま学校の落ちこぼれ 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "神様はじめました",
+    "volume": "神様はじめました 01",
+    "path": "./manga/神様はじめました/神様はじめました 01.html",
+    "page_idx": 0,
+    "last_page_idx": 199,
+    "cover_page": "【期間限定　無料お試し版】神様はじめました　1巻  Page 0.png"
+  },
+  {
+    "series": "神様はじめました",
+    "volume": "神様はじめました 02",
+    "path": "./manga/神様はじめました/神様はじめました 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】神様はじめました　2巻  Page 0.png"
+  },
+  {
+    "series": "神様はじめました",
+    "volume": "神様はじめました 03",
+    "path": "./manga/神様はじめました/神様はじめました 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】神様はじめました　3巻  Page 0.png"
+  },
+  {
+    "series": "神様はじめました",
+    "volume": "神様はじめました 04",
+    "path": "./manga/神様はじめました/神様はじめました 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】神様はじめました　4巻  Page 0.png"
+  },
+  {
+    "series": "神様はじめました",
+    "volume": "神様はじめました 05",
+    "path": "./manga/神様はじめました/神様はじめました 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】神様はじめました　5巻  Page 0.png"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 1",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "001.jpg"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 2",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "kkj02-000a.jpg"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 3",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "kkj03-000a.jpg"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 4",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 4.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "kkj04-000a.jpg"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 5",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 5.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "kkj05-000a.jpg"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 6",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 6.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "kkj06-000a.jpg"
+  },
+  {
+    "series": "神風怪盗ジャンヌ",
+    "volume": "神風怪盗ジャンヌ 7",
+    "path": "./manga/神風怪盗ジャンヌ/神風怪盗ジャンヌ 7.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "kkj07-000a.jpg"
+  },
+  {
+    "series": "私がモテてどうすんだ",
+    "volume": "私がモテてどうすんだ 01",
+    "path": "./manga/私がモテてどうすんだ/私がモテてどうすんだ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】私がモテてどうすんだ（１）  Page 0.png"
+  },
+  {
+    "series": "私がモテてどうすんだ",
+    "volume": "私がモテてどうすんだ 02",
+    "path": "./manga/私がモテてどうすんだ/私がモテてどうすんだ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】私がモテてどうすんだ（２）  Page 0.png"
+  },
+  {
+    "series": "私がモテてどうすんだ",
+    "volume": "私がモテてどうすんだ 03",
+    "path": "./manga/私がモテてどうすんだ/私がモテてどうすんだ 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】私がモテてどうすんだ（３）  Page 0.png"
+  },
+  {
+    "series": "私の可愛い子猫ちゃん",
+    "volume": "私の可愛い子猫ちゃん 01",
+    "path": "./manga/私の可愛い子猫ちゃん/私の可愛い子猫ちゃん 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0000.jpeg"
+  },
+  {
+    "series": "私の可愛い子猫ちゃん",
+    "volume": "私の可愛い子猫ちゃん 02",
+    "path": "./manga/私の可愛い子猫ちゃん/私の可愛い子猫ちゃん 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0000.jpeg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 01",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 02",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 03",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 04",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 05",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0.jpg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 06",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "私を喰べたい、ひとでなし",
+    "volume": "私を喰べたい、ひとでなし 07",
+    "path": "./manga/私を喰べたい、ひとでなし/私を喰べたい、ひとでなし 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "組長娘と世話係",
+    "volume": "組長娘と世話係 01",
+    "path": "./manga/組長娘と世話係/組長娘と世話係 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "組長娘と世話係",
+    "volume": "組長娘と世話係 02",
+    "path": "./manga/組長娘と世話係/組長娘と世話係 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "組長娘と世話係",
+    "volume": "組長娘と世話係 03",
+    "path": "./manga/組長娘と世話係/組長娘と世話係 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "組長娘と世話係",
+    "volume": "組長娘と世話係 04",
+    "path": "./manga/組長娘と世話係/組長娘と世話係 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "美少女戦士セーラームーン",
+    "volume": "セーラームーン 04　カラー完全版",
+    "path": "./manga/美少女戦士セーラームーン/セーラームーン 04　カラー完全版.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "cover.jpg"
+  },
+  {
+    "series": "舞ちゃんのお姉さん飼育ごはん",
+    "volume": "舞ちゃんのお姉さん飼育ごはん 01",
+    "path": "./manga/舞ちゃんのお姉さん飼育ごはん/舞ちゃんのお姉さん飼育ごはん 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "舞ちゃんのお姉さん飼育ごはん",
+    "volume": "舞ちゃんのお姉さん飼育ごはん 02",
+    "path": "./manga/舞ちゃんのお姉さん飼育ごはん/舞ちゃんのお姉さん飼育ごはん 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "舞ちゃんのお姉さん飼育ごはん",
+    "volume": "舞ちゃんのお姉さん飼育ごはん 03",
+    "path": "./manga/舞ちゃんのお姉さん飼育ごはん/舞ちゃんのお姉さん飼育ごはん 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "赤髪の白雪姫",
+    "volume": "赤髪の白雪姫 01",
+    "path": "./manga/赤髪の白雪姫/赤髪の白雪姫 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】赤髪の白雪姫　1巻  Page 0.png"
+  },
+  {
+    "series": "赤髪の白雪姫",
+    "volume": "赤髪の白雪姫 02",
+    "path": "./manga/赤髪の白雪姫/赤髪の白雪姫 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】赤髪の白雪姫　2巻  Page 0.png"
+  },
+  {
+    "series": "赤髪の白雪姫",
+    "volume": "赤髪の白雪姫 03",
+    "path": "./manga/赤髪の白雪姫/赤髪の白雪姫 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】赤髪の白雪姫　3巻  Page 0.png"
+  },
+  {
+    "series": "赤髪の白雪姫",
+    "volume": "赤髪の白雪姫 04",
+    "path": "./manga/赤髪の白雪姫/赤髪の白雪姫 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】赤髪の白雪姫　4巻  Page 0.png"
+  },
+  {
+    "series": "雨でも晴れでも",
+    "volume": "雨でも晴れでも 1",
+    "path": "./manga/雨でも晴れでも/雨でも晴れでも 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "000001.jpeg"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 01",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　1  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 02",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　2  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 03",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　3  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 04",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 04.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　4  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 05",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 05.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　5  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 06",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 06.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　6  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 07",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 07.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　7  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 08",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 08.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　8  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 09",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 09.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　9  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 10",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 10.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　10  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 11",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 11.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　11  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 12",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 12.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　12  Page 0.png"
+  },
+  {
+    "series": "魔入りました！入間くん",
+    "volume": "魔入りました！入間くん 13",
+    "path": "./manga/魔入りました！入間くん/魔入りました！入間くん 13.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "【期間限定　無料お試し版】魔入りました！入間くん　13  Page 0.png"
+  },
+  {
+    "series": "魔女のエデン",
+    "volume": "魔女のエデン 01",
+    "path": "./manga/魔女のエデン/魔女のエデン 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-001.jpg"
+  },
+  {
+    "series": "魔女のエデン",
+    "volume": "魔女のエデン 02",
+    "path": "./manga/魔女のエデン/魔女のエデン 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-001.jpg"
+  },
+  {
+    "series": "魔女のエデン",
+    "volume": "魔女のエデン 03",
+    "path": "./manga/魔女のエデン/魔女のエデン 03.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "i-001.jpg"
+  },
+  {
+    "series": "魔法のリノベ",
+    "volume": "魔法のリノベ  01",
+    "path": "./manga/魔法のリノベ/魔法のリノベ  01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "魔法のリノベ",
+    "volume": "魔法のリノベ  02",
+    "path": "./manga/魔法のリノベ/魔法のリノベ  02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "魔法少女事変",
+    "volume": "魔法少女事変 1",
+    "path": "./manga/魔法少女事変/魔法少女事変 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "魔法少女事変",
+    "volume": "魔法少女事変 2",
+    "path": "./manga/魔法少女事変/魔法少女事変 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "魔法少女事変",
+    "volume": "魔法少女事変 3",
+    "path": "./manga/魔法少女事変/魔法少女事変 3.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "00001.jpeg"
+  },
+  {
+    "series": "魔法少年なつき×らびっツ",
+    "volume": "魔法少年なつき×らびっツ 1",
+    "path": "./manga/魔法少年なつき×らびっツ/魔法少年なつき×らびっツ 1.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "魔法少年なつき×らびっツ",
+    "volume": "魔法少年なつき×らびっツ 2",
+    "path": "./manga/魔法少年なつき×らびっツ/魔法少年なつき×らびっツ 2.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0001.jpg"
+  },
+  {
+    "series": "黄泉のツガイ",
+    "volume": "黄泉のツガイ 01",
+    "path": "./manga/黄泉のツガイ/黄泉のツガイ 01.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "黄泉のツガイ 1巻【無料お試し版】  Page 0.png"
+  },
+  {
+    "series": "黄泉のツガイ",
+    "volume": "黄泉のツガイ 02",
+    "path": "./manga/黄泉のツガイ/黄泉のツガイ 02.html",
+    "page_idx": 0,
+    "last_page_idx": 0,
+    "cover_page": "0d37_tsugai_1920_02_001.jpg"
+  }
+]

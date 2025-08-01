@@ -12,7 +12,7 @@ def normalize(path):
 
 
 # Flask-Session für Session-Management
-app = Flask(__name__, static_url_path="/static", static_folder="/media/gamedisk/japanese")
+app = Flask(__name__, static_url_path="/static", static_folder="B:/Manga/+Mokuro")
 
 CORS(app)
 # Keine Authentifizierung und CORS mehr
@@ -177,6 +177,69 @@ def serve_manga(filename):
         response.headers["Cache-Control"] = "public, max-age=86400"
     return response
 
+@app.route('/series_categories')
+def get_series_categories():
+    categories_path = 'series_categories.json'
+    if os.path.exists(categories_path):
+        with open(categories_path, 'r', encoding='utf-8') as f:
+            return jsonify(json.load(f))
+    return jsonify({})
+
+@app.route('/save_category', methods=['POST'])
+def save_category():
+    data = request.json
+    try:
+        categories_path = 'series_categories.json'
+        categories = {}
+        
+        if os.path.exists(categories_path):
+            with open(categories_path, 'r', encoding='utf-8') as f:
+                categories = json.load(f)
+        
+        categories[data['series']] = data['category']
+        
+        with open(categories_path, 'w', encoding='utf-8') as f:
+            json.dump(categories, f, ensure_ascii=False, indent=2)
+        
+        return jsonify({'status': 'success'})
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+# Add this new endpoint to track last accessed volumes
+@app.route('/update_last_accessed', methods=['POST'])
+def update_last_accessed():
+    data = request.json
+    print(f"Updating last accessed: {data}")  # Add this line
+    series = data.get('series')
+    volume = data.get('volume')
+    
+    try:
+        # Load existing last accessed data
+        last_accessed_path = 'last_accessed.json'
+        last_accessed = {}
+        if os.path.exists(last_accessed_path):
+            with open(last_accessed_path, 'r', encoding='utf-8') as f:
+                last_accessed = json.load(f)
+        
+        # Update the last accessed volume for this series
+        last_accessed[series] = volume
+        
+        # Save back to file
+        with open(last_accessed_path, 'w', encoding='utf-8') as f:
+            json.dump(last_accessed, f, ensure_ascii=False, indent=2)
+        
+        return jsonify({'status': 'success'})
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+# Add this endpoint to get last accessed data
+@app.route('/last_accessed')
+def get_last_accessed():
+    last_accessed_path = 'last_accessed.json'
+    if os.path.exists(last_accessed_path):
+        with open(last_accessed_path, 'r', encoding='utf-8') as f:
+            return jsonify(json.load(f))
+    return jsonify({})
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=1506)  # Port 1506
