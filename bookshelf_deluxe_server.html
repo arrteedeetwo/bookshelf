@@ -9,6 +9,7 @@
             --category-in-progress: #FF9800;
             --category-planned: #2196F3;
             --category-caught-up: #4CAF50;
+            --category-paused: #FF5722;  /* New orange-red color for Paused */
             --category-future: #9C27B0;
             --category-finished: #607D8B;
         }
@@ -128,6 +129,7 @@
         #caught-up-section .category-header { background: var(--category-caught-up); }
         #future-section .category-header { background: var(--category-future); }
         #finished-section .category-header { background: var(--category-finished); }
+        #paused-section .category-header { background: var(--category-paused); }
     </style>
 </head>
 <body>
@@ -155,6 +157,14 @@
         <div class="bookshelf-container" id="caught-up-books"></div>
     </div>
 
+    <div class="category-section" id="paused-section">
+    <h2 class="category-header">
+        <span>Paused</span>
+        <button class="category-toggle">▼</button>
+    </h2>
+    <div class="bookshelf-container" id="paused-books"></div>
+    </div>
+    
     <div class="category-section" id="future-section">
         <h2 class="category-header">
             <span>Future</span>
@@ -228,6 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'in-progress': document.getElementById('in-progress-books'),
             'planned': document.getElementById('planned-books'),
             'caught-up': document.getElementById('caught-up-books'),
+            'paused': document.getElementById('paused-books'),  // New category
             'future': document.getElementById('future-books'),
             'finished': document.getElementById('finished-books')
         };
@@ -283,6 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <option value="in-progress" ${category === 'in-progress' ? 'selected' : ''}>In Progress</option>
                             <option value="planned" ${category === 'planned' ? 'selected' : ''}>Planned</option>
                             <option value="caught-up" ${category === 'caught-up' ? 'selected' : ''}>Caught Up</option>
+                             <option value="paused" ${category === 'paused' ? 'selected' : ''}>Paused</option> 
                             <option value="future" ${category === 'future' ? 'selected' : ''}>Future</option>
                             <option value="finished" ${category === 'finished' ? 'selected' : ''}>Finished</option>
                         </select>
