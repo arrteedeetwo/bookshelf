@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      cursor: url('https://emojicdn.elk.sh/%F0%9F%90%B9'), auto;
+      font-family: "M PLUS 2", sans-serif;
+    }
+    body.modal-open {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width);
+}
+/* Animationen */
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popupFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+
+/* Klasse für Ausblenden */
+.popup-content.fade-out {
+  animation: popupFadeOut 0.15s ease-in forwards;
+}
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.popup-content {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 90vw;
+  max-height: 95vh;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  justify-content: center;
+    scrollbar-width: none; /* Firefox */
+      animation: popupFadeIn 0.2s ease-out;
+  transition: opacity 0.2s ease;
+}
+
+
+.popup-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.popup-close svg {
+  width: 32px;
+  height: 32px;
+  stroke: #fff;
+  transition: stroke 0.2s ease;
+}
+
+
+.popup-close {
+  position: fixed;
+  top: 2rem;
+  right: 1.7vw;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s ease;
+}
+
+.popup-close:hover {
+  opacity:.8;
+}
+
+
+
+    .bold-mplus2 {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+    /* Stil für die Coverbilder */
+    .cover-img {
+      object-fit: cover;   /* Bild skaliert, um den Container auszufüllen */
+      width: 100%;
+      height: 100%;         /* Höhe auf 100% setzen, damit das Bild den gesamten Bereich ausfüllt */
+      border-radius: 16px;
+    }
+.extra-volume {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.extra-volume.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+    /* Stil für den Bereich des Bildes */
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Titel auf dem Bild */
+    .title-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      
+      /* Stil für die Zeilenbegrenzung und ... */
+      white-space: nowrap;  /* Verhindert den Umbruch */
+      overflow: hidden;     /* Verhindert, dass der Text überläuft */
+      text-overflow: ellipsis; /* Fügt "..." hinzu, wenn der Text abgeschnitten wird */
+    }
+
+    /* Stil für den Container der Serien */
+    .series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    }
+    
+        .image-supi-container {
+		width:250px;
+	}
+	    .image-supi-h-container {
+		height:350px;
+	  transition: transform 0.2s ease;
+  transform-origin: bottom center;
+	}
+	
+	.image-supi-h-container:hover {
+	 transform: scale(1.03) translateY(-4px) rotate(1deg);
+  transition: transform 0.2s ease;
+}
+
+    /* Stil für die Button-Container */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 4px;
+    }
+
+    /* Buttons */
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 8px;
+      text-align: center;
+      opacity:1;
+      border-radius: 16px;
+      color: #18181b;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .button:hover {
+      background-color: #f4f4f5;
+    }
+    .read-btn {
+  flex: 1.5; /* macht sie größer */
+  font-weight: bold;
+}
+
+    .button svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Hover Effekt: Titel bleibt sichtbar */
+    .button-container:hover + .title-overlay {
+      opacity: 1;
+    }
+    .image-container {
+  overflow: visible;
+  position: relative;
+}
+    .check-overlay {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.check-icon {
+  width: 32px;
+  height: 32px;
+  color: #22c55e; /* Tailwind's green-500 */
+}
+
+  </style>
+</head>
+<body class="bg-zinc-100 text-zinc-900">
+  <div class="p-4">
+<h1 class="p-4 flex items-center gap-2 text-xl bold-mplus2 ">
+  <span>古池や 蛙飛び込む 水の音</span>
+
+
+</h1>
+
+    <div id="series-container" class="series-container">
+      <!-- Manga series will be injected here dynamically -->
+    </div>
+  </div>
+
+  <template id="book-template">
+    <div class="relative image-supi-container">
+      <div class="relative w-full image-supi-h-container rounded-2xl shadow-xl">
+        <a href="">
+          <div class="image-container">
+            <img src="" class="cover-img"/>
+            <div class="title-overlay"></div> <!-- Title inside image at the bottom -->
+          </div>
+        </a>
+      </div>
+      <!-- Buttons unter dem Cover -->
+      <div class="button-container mt-2 ">
+       
+        </button>
+        <button title="all volumes" class="all-btn button bg-zinc-50 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+</svg>
+ <button title="continue" class="read-btn button bg-zinc-50 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+</svg>
+        </button>
+        <button title="next volume" class="next-btn button bg-zinc-50 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+        </button>
+      </div>
+    </div>
+  </template>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const seriesContainer = document.getElementById('series-container');
+
+  // Initialize SortableJS
+  new Sortable(seriesContainer, {
+    onEnd: function (evt) {
+      // Extrahiere die Reihenfolge der Serien aus dem Container
+      const orderedSeries = Array.from(seriesContainer.children).map(item => {
+        const titleElement = item.querySelector(".title-overlay");
+        
+        // Überprüfen, ob der Titel korrekt extrahiert wird
+        if (titleElement) {
+          console.log("Titel extrahiert:", titleElement.textContent.trim()); // Debugging: Zeigt den Titel an
+          return titleElement.textContent.trim(); // Entferne überflüssige Leerzeichen
+        } else {
+          console.error("Fehler: Kein Titel für diese Serie gefunden:", item); // Wenn der Titel nicht gefunden wird
+          return null; // Wenn kein Titel gefunden wird, `null` zurückgeben
+        }
+      }).filter(series => series !== null);  // Entferne `null`-Werte aus der Reihenfolge
+
+      console.log("Neue Reihenfolge:", orderedSeries); // Debugging: Überprüfe die Reihenfolge
+
+      // Sende die neue Reihenfolge der Serien an den Server
+      fetch("/update_series_order", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ new_order: orderedSeries })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Antwort vom Server:', data); // Debugging: Zeige Server-Antwort in der Konsole an
+      })
+      .catch(error => {
+        console.error('Error updating series order:', error);
+      });
+    }
+  });
+});
+
+</script>
+
+
+  <script>
+
+function loadAllVolumes() {
+  fetch("/progress")
+    .then(res => res.json())
+    .then(seriesArray => {
+      const seriesMap = new Map();
+      for (const item of seriesArray) {
+        if (!seriesMap.has(item.series)) seriesMap.set(item.series, []);
+        seriesMap.get(item.series).push({ path: item.path, mokuro: item });
+      }
+
+      fetch("/series_order")
+        .then(orderRes => orderRes.json())
+        .then(seriesOrder => {
+          if (!Array.isArray(seriesOrder) || seriesOrder.length === 0) {
+            seriesOrder = Array.from(seriesMap.keys());
+          }
+
+          const sortedSeries = [];
+          seriesOrder.forEach(series => {
+            if (seriesMap.has(series)) {
+              const volumes = seriesMap.get(series);
+              volumes.sort((a, b) => a.mokuro.volume.localeCompare(b.mokuro.volume, undefined, { numeric: true }));
+              sortedSeries.push({ series, volumes });
+            }
+          });
+
+          renderSeries(sortedSeries);
+          enableDragAndDrop();
+        })
+        .catch(err => {
+          console.error("Fehler beim Laden der Serien-Reihenfolge:", err);
+        });
+    })
+    .catch(err => {
+      console.error("Fehler beim Abrufen der Serien:", err);
+    });
+}
+
+function renderSeries(sortedSeries) {
+  const container = document.getElementById("series-container");
+  container.innerHTML = "";
+
+  for (const { series, volumes } of sortedSeries) {
+    let currentVolume = volumes.find(v => v.mokuro.page_idx < v.mokuro.last_page_idx - 2);
+    if (!currentVolume && volumes.length > 0) {
+      currentVolume = volumes.find(v => v.mokuro.page_idx === 0 && v.mokuro.last_page_idx === 0) || volumes[volumes.length - 1];
+    }
+
+    const currentIdx = volumes.indexOf(currentVolume);
+
+    const seriesBox = document.createElement("div");
+    seriesBox.className = "inline-block m-2 align-top";
+    seriesBox.dataset.series = series;
+
+    const tmpl = document.getElementById("book-template");
+    const clone = tmpl.content.cloneNode(true);
+    const link = clone.querySelector("a");
+    const img = clone.querySelector("img");
+    const readBtn = clone.querySelector(".read-btn");
+    const allBtn = clone.querySelector(".all-btn");
+    if (volumes.length <= 1) {
+  allBtn.style.display = "none";
+}
+    const nextBtn = clone.querySelector(".next-btn");
+    if (volumes.length <= 1) {
+  nextBtn.style.display = "none";
+}
+    const titleOverlay = clone.querySelector(".title-overlay");
+
+    link.href = currentVolume.path;
+    const folder = currentVolume.path.replace(".html", "");
+    const cover = currentVolume.mokuro.cover_page || "0.jpg";
+    const imagePath = `${folder}/${encodeURIComponent(cover)}`;
+    img.src = imagePath;
+
+    titleOverlay.textContent = decodeURIComponent(series);
+
+    readBtn.onclick = () => window.location.href = currentVolume.path;
+
+allBtn.onclick = () => {
+	const scrollBarFix = () => {
+  const scrollDiv = document.createElement("div");
+  scrollDiv.style.visibility = "hidden";
+  scrollDiv.style.overflow = "scroll";
+  scrollDiv.style.position = "absolute";
+  scrollDiv.style.top = "-9999px";
+  scrollDiv.style.width = "100px";
+  document.body.appendChild(scrollDiv);
+  const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+  document.body.removeChild(scrollDiv);
+  document.body.style.setProperty("--scrollbar-width", `${scrollbarWidth}px`);
+};
+
+// 🧊 Scrollbar-Ausgleich aktivieren
+scrollBarFix();
+document.body.classList.add("modal-open");
+  
+
+  // 🪟 Overlay erstellen
+  const overlay = document.createElement("div");
+  overlay.className = "popup-overlay";
+
+  const content = document.createElement("div");
+  content.className = "popup-content";
+
+  // ❌ Close-Button oben rechts
+  const closeBtn = document.createElement("div");
+  closeBtn.className = "popup-close";
+closeBtn.innerHTML = `
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+       stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+  </svg>
+`;
+closeBtn.onclick = () => {
+  content.classList.add("fade-out");
+  setTimeout(() => {
+    overlay.remove();
+document.body.classList.remove("modal-open");
+document.body.style.removeProperty("--scrollbar-width");
+
+  }, 150);
+};
+  content.appendChild(closeBtn);
+
+  // 📚 Alle anderen Volumes (außer dem aktuellen)
+  volumes.forEach((vol, idx) => {
+    if (idx === currentIdx) return;
+
+    const volClone = tmpl.content.cloneNode(true);
+
+    // ❌ Buttons entfernen
+    volClone.querySelector(".button-container")?.remove();
+
+    // 🎀 Titel-Overlay mit Volume-Nr
+    const titleOverlay = volClone.querySelector(".title-overlay");
+    if (titleOverlay) {
+      const volLabel = vol.mokuro.volume || "??";
+      titleOverlay.textContent = `Vol. ${volLabel}`;
+    }
+
+    // 📎 Bild & Link setzen
+    const volLink = volClone.querySelector("a");
+    const volImg = volClone.querySelector("img");
+    volLink.href = vol.path;
+
+    const volCover = vol.mokuro.cover_page || "0.jpg";
+    volImg.src = `${vol.path.replace(".html", "")}/${encodeURIComponent(volCover)}`;
+if (
+  typeof vol.mokuro.page_idx === "number" &&
+  typeof vol.mokuro.last_page_idx === "number" &&
+  vol.mokuro.page_idx >= vol.mokuro.last_page_idx - 2 &&
+  vol.mokuro.last_page_idx > 0
+) {
+  const checkOverlay = document.createElement("div");
+  checkOverlay.className = "check-overlay";
+  checkOverlay.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+         fill="currentColor" class="check-icon">
+      <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 
+        4.365 9.75 9.75-4.365 9.75-9.75 
+        9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 
+        0 1 0-1.22-.872l-3.236 4.53L9.53 
+        12.22a.75.75 0 0 0-1.06 1.06l2.25 
+        2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" 
+        clip-rule="evenodd"/>
+    </svg>
+  `;
+  volClone.querySelector(".image-container")?.appendChild(checkOverlay);
+}
+    content.appendChild(volClone);
+  });
+
+  overlay.appendChild(content);
+  document.body.appendChild(overlay);
+
+  // 🖱️ Klick auf dunklen Hintergrund → schließen
+overlay.onclick = e => {
+  if (e.target === overlay) {
+    content.classList.add("fade-out");
+    setTimeout(() => {
+      overlay.remove();
+      document.body.classList.remove("modal-open");
+    }, 150);
+  }
+};
+};
+
+
+
+    nextBtn.onclick = () => {
+      if (currentIdx + 1 < volumes.length) {
+        window.location.href = volumes[currentIdx + 1].path;
+      }
+    };
+
+    seriesBox.appendChild(clone);
+    container.appendChild(seriesBox);
+  }
+}
+
+function enableDragAndDrop() {
+  const container = document.getElementById("series-container");
+  new Sortable(container, {
+    onEnd: function () {
+      const orderedSeries = Array.from(container.children).map(item => item.dataset.series);
+      console.log("Neue Reihenfolge:", orderedSeries);
+
+      fetch("/update_series_order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ new_order: orderedSeries })
+      })
+        .then(response => response.json())
+        .catch(error => console.error('Error updating series order:', error));
+    }
+  });
+}
+
+window.onload = loadAllVolumes;
+</script>
+  </script>
+</body>
+</html>
