@@ -205,33 +205,36 @@ def save_category():
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)}), 500
 
-# Add this new endpoint to track last accessed volumes
 @app.route('/update_last_accessed', methods=['POST'])
 def update_last_accessed():
     data = request.json
-    print(f"Updating last accessed: {data}")  # Add this line
-    series = data.get('series')
-    volume = data.get('volume')
-    
+    print(f"DEBUG - Updating last accessed: {data}")  # Debug logging
     try:
-        # Load existing last accessed data
         last_accessed_path = 'last_accessed.json'
         last_accessed = {}
+        
         if os.path.exists(last_accessed_path):
             with open(last_accessed_path, 'r', encoding='utf-8') as f:
                 last_accessed = json.load(f)
         
-        # Update the last accessed volume for this series
-        last_accessed[series] = volume
+        # Convert series names to consistent format
+        series_name = data['series']
+        last_accessed[series_name] = data['volume']
         
-        # Save back to file
-        with open(last_accessed_path, 'w', encoding='utf-8') as f:
+        # Write with atomic replacement
+        temp_path = last_accessed_path + '.tmp'
+        with open(temp_path, 'w', encoding='utf-8') as f:
             json.dump(last_accessed, f, ensure_ascii=False, indent=2)
         
+        # Atomic rename
+        os.replace(temp_path, last_accessed_path)
+        
+        print(f"DEBUG - Successfully updated last accessed for {series_name}")  # Debug logging
         return jsonify({'status': 'success'})
     except Exception as e:
+        print(f"ERROR - Failed to update last accessed: {str(e)}")  # Debug logging
         return jsonify({'status': 'error', 'message': str(e)}), 500
-
+        
 # Add this endpoint to get last accessed data
 @app.route('/last_accessed')
 def get_last_accessed():
