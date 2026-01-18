@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const totalPages = parseInt(input?.max || "0", 10);
   let lastSentPage = -1;
+  let currentSeriesData = null;
+  let allProgressData = null;
 
   console.log("📖 Hamsti-Progress aktiv für:", path);
 
@@ -33,14 +35,16 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(res => res.json())
     .then(data => {
       console.log("📖 Fortschritt vom Server geladen:", data);
+      allProgressData = data;
 
       // Ausgabe des gesuchten Pfads und aller gespeicherten Pfade zur Fehlerbehebung
       console.log("📖 Gesuchter Pfad:", path);
       data.forEach(entry => console.log(`📖 Gespeicherter Pfad: ${entry.path}`));
 
       // Vergleiche den dekodierten Pfad mit den gespeicherten Pfaden
-      const match = data.find(entry => normalize(entry.path) === normalize(path)); // Normalisierung beider Pfade
+      const match = data.find(entry => normalize(entry.path) === normalize(path));
       if (match) {
+        currentSeriesData = match;
         const page_idx = match.page_idx || 0;
         input.value = page_idx + 1; // Seite auf den gespeicherten Fortschritt setzen
         input.dispatchEvent(new Event("change")); // Änderung des Eingabewerts auslösen
@@ -54,7 +58,37 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Fehler beim Abrufen des Fortschritts:", err);
     });
 
+  // Funktion zum Aktualisieren von last_accessed
+  function updateLastAccessed(series, volume) {
+    fetch("/update_last_accessed", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        series: series,
+        volume: volume
+      })
+    })
+      .then(r => r.json())
+      .then(res => console.log("✅ Last accessed aktualisiert:", res))
+      .catch(console.error);
+  }
+
+  // Funktion zum Finden des nächsten Volumes in der Serie
+  function findNextVolume(currentSeries, currentVolume) {
+    if (!allProgressData) return null;
+    
+    const seriesVolumes = allProgressData.filter(v => v.series === currentSeries);
+    const currentIndex = seriesVolumes.findIndex(v => v.volume === currentVolume);
+    
+    if (currentIndex >= 0 && currentIndex + 1 < seriesVolumes.length) {
+      return seriesVolumes[currentIndex + 1];
+    }
+    return null;
+  }
+
   // Fortschritt senden bei Änderung
+  let lastPageReachedNotified = false;
+  
   setInterval(() => {
     const current = parseInt(input.value, 10) - 1;
     if (Number.isNaN(current) || current === lastSentPage) return;
@@ -62,6 +96,23 @@ document.addEventListener("DOMContentLoaded", function () {
     lastSentPage = current;
 
     console.log("📤 Fortschritt Seite:", current);
+
+    // Prüfen, ob letzte Seite erreicht wurde
+    if (current >= totalPages - 1 && !lastPageReachedNotified && currentSeriesData) {
+      lastPageReachedNotified = true;
+      console.log("🎉 Letzte Seite erreicht! Aktualisiere last_accessed...");
+      
+      const nextVolume = findNextVolume(currentSeriesData.series, currentSeriesData.volume);
+      
+      if (nextVolume) {
+        // Aktualisiere auf das nächste Volume
+        updateLastAccessed(currentSeriesData.series, nextVolume.volume);
+        console.log(`📚 Last accessed aktualisiert auf: ${nextVolume.volume}`);
+      } else {
+        // Kein nächstes Volume gefunden, behalte aktuelles
+        console.log("📚 Kein nächstes Volume gefunden, behalte aktuelles Volume");
+      }
+    }
 
     fetch("/update_progress", {
       method: "POST",
@@ -189,16 +240,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 🧩 Zusammenbauen
   nav.appendChild(backToShelf);
-    nav.appendChild(next);
+  nav.appendChild(next);
   nav.appendChild(prev);
 
   document.body.appendChild(nav);
   
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") {
-    window.location.replace(window.location.origin + "/serve_bookshelf");
-  }
-});
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      window.location.replace(window.location.origin + "/serve_bookshelf");
+    }
+  });
 
 })();
-
