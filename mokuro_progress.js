@@ -252,3 +252,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 })();
+
+// Update last opened timestamp when opening a volume
+(function() {
+  const path = decodeURIComponent(window.location.pathname);
+  
+  fetch("/progress")
+    .then(res => res.json())
+    .then(data => {
+      const normalize = path => path.replace(/^\/static\//, "").replace(/\\/g, "/").toLowerCase();
+      const match = data.find(entry => normalize(entry.path) === normalize(path));
+      
+      if (match) {
+        fetch("/update_last_opened", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            series: match.series,
+            timestamp: Date.now()
+          })
+        }).catch(console.error);
+      }
+    })
+    .catch(console.error);
+})();
