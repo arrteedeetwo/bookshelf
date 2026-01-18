@@ -9,17 +9,16 @@
             --category-in-progress: #FF9800;
             --category-planned: #2196F3;
             --category-caught-up: #4CAF50;
-            --category-paused: #FF5722;  /* New orange-red color for Paused */
+            --category-paused: #FF5722;
             --category-future: #9C27B0;
             --category-finished: #607D8B;
         }
 
-        /* Mobile-first responsive design */
         body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            touch-action: manipulation; /* Prevent accidental zooming */
+            touch-action: manipulation;
         }
 
         .category-section {
@@ -72,7 +71,7 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            pointer-events: none; /* Prevent image drag on mobile */
+            pointer-events: none;
         }
 
         .book-info {
@@ -104,7 +103,6 @@
             font-size: 0.7rem;
         }
 
-        /* Mobile-specific adjustments */
         @media (max-width: 768px) {
             .bookshelf-container {
                 grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -123,7 +121,6 @@
             }
         }
 
-        /* Category color coding */
         #in-progress-section .category-header { background: var(--category-in-progress); }
         #planned-section .category-header { background: var(--category-planned); }
         #caught-up-section .category-header { background: var(--category-caught-up); }
@@ -158,11 +155,11 @@
     </div>
 
     <div class="category-section" id="paused-section">
-    <h2 class="category-header">
-        <span>Paused</span>
-        <button class="category-toggle">▼</button>
-    </h2>
-    <div class="bookshelf-container" id="paused-books"></div>
+        <h2 class="category-header">
+            <span>Paused</span>
+            <button class="category-toggle">▼</button>
+        </h2>
+        <div class="bookshelf-container" id="paused-books"></div>
     </div>
     
     <div class="category-section" id="future-section">
@@ -183,19 +180,17 @@
 
    <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Load data from server
     let categories = {};
     let seriesData = [];
     let lastAccessedVolumes = {};
+    let lastOpenedTimestamps = {};
     
-    // Mobile touch prevention
     document.addEventListener('touchmove', function(e) {
         if (e.target.classList.contains('book-cover')) {
             e.preventDefault();
         }
     }, { passive: false });
 
-    // Toggle category sections
     document.querySelectorAll('.category-toggle').forEach(btn => {
         btn.addEventListener('click', function() {
             const section = this.closest('.category-section');
@@ -205,22 +200,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Load data from server
     async function loadData() {
         try {
-            // Load categories
             const catResponse = await fetch('/series_categories');
             if (catResponse.ok) {
                 categories = await catResponse.json();
             }
             
-            // Load last accessed volumes
             const lastAccessedResponse = await fetch('/last_accessed');
             if (lastAccessedResponse.ok) {
                 lastAccessedVolumes = await lastAccessedResponse.json();
             }
             
-            // Load progress data
+            const lastOpenedResponse = await fetch('/last_opened');
+            if (lastOpenedResponse.ok) {
+                lastOpenedTimestamps = await lastOpenedResponse.json();
+            }
+            
             const progResponse = await fetch('/progress');
             if (progResponse.ok) {
                 seriesData = await progResponse.json();
@@ -231,56 +227,68 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Render the bookshelf
     function renderBookshelf() {
         const uniqueSeries = [...new Set(seriesData.map(item => item.series))];
         const containerMap = {
             'in-progress': document.getElementById('in-progress-books'),
             'planned': document.getElementById('planned-books'),
             'caught-up': document.getElementById('caught-up-books'),
-            'paused': document.getElementById('paused-books'),  // New category
+            'paused': document.getElementById('paused-books'),
             'future': document.getElementById('future-books'),
             'finished': document.getElementById('finished-books')
         };
 
-        // Clear all containers
         Object.values(containerMap).forEach(container => {
             container.innerHTML = '';
         });
 
+        // Group series by category
+        const seriesByCategory = {
+            'in-progress': [],
+            'planned': [],
+            'caught-up': [],
+            'paused': [],
+            'future': [],
+            'finished': []
+        };
+
         uniqueSeries.forEach(seriesName => {
-            const seriesVolumes = seriesData.filter(item => item.series === seriesName);
-            
-            // Find volumes with progress (page_idx > 0)
-            const volumesWithProgress = seriesVolumes.filter(v => v.page_idx > 0);
-            
-            // Determine which volume to display
-            // Modify the volume selection logic in renderBookshelf():
-            let displayVolume = seriesVolumes[0]; // Default to first volume
-            
-            // 1. Check last_accessed first
-            if (lastAccessedVolumes[seriesName]) {
-                const lastAccessed = seriesVolumes.find(v => v.volume === lastAccessedVolumes[seriesName]);
-                if (lastAccessed) {
-                    displayVolume = lastAccessed;
-                }
-            }
-            
-            // 2. Then look for volumes with progress (only if no last_accessed)
-            if (displayVolume === seriesVolumes[0]) {
-                const volumesWithProgress = seriesVolumes.filter(v => v.page_idx > 0);
-                if (volumesWithProgress.length > 0) {
-                    // Find volume with highest page_idx
-                    displayVolume = volumesWithProgress.reduce((prev, current) => 
-                        (prev.page_idx > current.page_idx) ? prev : current
-                    );
-                }
-            }
-            
             const category = categories[seriesName] || 'future';
+            const timestamp = lastOpenedTimestamps[seriesName] || 0;
+            seriesByCategory[category].push({ seriesName, timestamp });
+        });
+
+        // Sort each category by timestamp (most recent first)
+        Object.keys(seriesByCategory).forEach(category => {
+            seriesByCategory[category].sort((a, b) => b.timestamp - a.timestamp);
+        });
+
+        // Render each category
+        Object.keys(seriesByCategory).forEach(category => {
             const container = containerMap[category];
-            
-            if (container) {
+            if (!container) return;
+
+            seriesByCategory[category].forEach(({ seriesName }) => {
+                const seriesVolumes = seriesData.filter(item => item.series === seriesName);
+                
+                let displayVolume = seriesVolumes[0];
+                
+                if (lastAccessedVolumes[seriesName]) {
+                    const lastAccessed = seriesVolumes.find(v => v.volume === lastAccessedVolumes[seriesName]);
+                    if (lastAccessed) {
+                        displayVolume = lastAccessed;
+                    }
+                }
+                
+                if (displayVolume === seriesVolumes[0]) {
+                    const volumesWithProgress = seriesVolumes.filter(v => v.page_idx > 0);
+                    if (volumesWithProgress.length > 0) {
+                        displayVolume = volumesWithProgress.reduce((prev, current) => 
+                            (prev.page_idx > current.page_idx) ? prev : current
+                        );
+                    }
+                }
+                
                 const bookElement = document.createElement('div');
                 bookElement.className = 'book';
                 bookElement.innerHTML = `
@@ -295,14 +303,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <option value="in-progress" ${category === 'in-progress' ? 'selected' : ''}>In Progress</option>
                             <option value="planned" ${category === 'planned' ? 'selected' : ''}>Planned</option>
                             <option value="caught-up" ${category === 'caught-up' ? 'selected' : ''}>Caught Up</option>
-                             <option value="paused" ${category === 'paused' ? 'selected' : ''}>Paused</option> 
+                            <option value="paused" ${category === 'paused' ? 'selected' : ''}>Paused</option>
                             <option value="future" ${category === 'future' ? 'selected' : ''}>Future</option>
                             <option value="finished" ${category === 'finished' ? 'selected' : ''}>Finished</option>
                         </select>
                     </div>
                 `;
                 
-                // Category change handler
                 bookElement.querySelector('.category-select').addEventListener('change', async function() {
                     categories[seriesName] = this.value;
                     try {
@@ -322,10 +329,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 
-                // Click handler - update last accessed when opening
                 bookElement.addEventListener('click', async function(e) {
                     if (!e.target.closest('.category-select')) {
                         try {
+                            // Update last opened timestamp
+                            await fetch('/update_last_opened', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({
+                                    series: seriesName,
+                                    timestamp: Date.now()
+                                })
+                            });
+                            
+                            // Update last accessed volume
                             await fetch('/update_last_accessed', {
                                 method: 'POST',
                                 headers: {
@@ -336,16 +355,17 @@ document.addEventListener('DOMContentLoaded', function() {
                                     volume: displayVolume.volume
                                 })
                             });
+                            
                             window.location.href = displayVolume.path;
                         } catch (error) {
-                            console.error('Error updating last accessed:', error);
+                            console.error('Error updating timestamps:', error);
                             window.location.href = displayVolume.path;
                         }
                     }
                 });
                 
                 container.appendChild(bookElement);
-            }
+            });
         });
     }
 
