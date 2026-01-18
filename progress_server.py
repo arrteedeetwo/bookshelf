@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, send_from_directory, redirect, url_for, make_response
 import json
 import os
-from flask_cors import CORS  # Importieren von flask-cors
+from flask_cors import CORS
 from pathlib import Path
 
 
@@ -15,8 +15,6 @@ def normalize(path):
 app = Flask(__name__, static_url_path="/static", static_folder="B:/Manga/+Mokuro")
 
 CORS(app)
-# Keine Authentifizierung und CORS mehr
-# Keine CORS und Authentifizierung
 
 PROGRESS_PATH = "progress.json"
 MANGA_ROOT = Path(app.static_folder) / "manga"
@@ -24,7 +22,7 @@ MANGA_ROOT = Path(app.static_folder) / "manga"
 # Funktion zum Laden des Fortschritts aus der JSON-Datei
 def load_progress():
     if not os.path.exists(PROGRESS_PATH):
-        initialize_progress()  # Stelle sicher, dass die Datei existiert und initialisiert ist.
+        initialize_progress()
     
     try:
         with open(PROGRESS_PATH, "r", encoding="utf-8") as f:
@@ -32,16 +30,16 @@ def load_progress():
             return json.load(f)
     except json.JSONDecodeError as e:
         print(f"Fehler beim Laden der JSON-Datei: {e}")
-        return []  # Rückgabe einer leeren Liste im Fehlerfall
+        return []
     except Exception as e:
         print(f"Fehler beim Laden von progress.json: {e}")
-        return []  # Rückgabe einer leeren Liste im Fehlerfall
+        return []
 
 
 # Funktion zur Initialisierung der progress.json-Datei, falls sie nicht existiert
 def initialize_progress():
     if os.path.exists(PROGRESS_PATH):
-        return  # Keine Neuinitialisierung, wenn Datei existiert
+        return
 
     progress_entries = []
 
@@ -79,7 +77,6 @@ def initialize_progress():
         json.dump(progress_entries, f, ensure_ascii=False, indent=2)
     print(f"✅ Fortschritt initialisiert: {PROGRESS_PATH}")
 
-# Routen und Logik, die mit Flask laufen
 @app.route("/")
 def index():
     return redirect(url_for('serve_bookshelf'))
@@ -91,9 +88,8 @@ def serve_bookshelf():
 @app.route("/progress")
 def get_progress():
     progress = load_progress()
-    # Hier können Sie alle Pfade der geladenen Fortschritte ausgeben
     for entry in progress:
-        print(f"Gespeicherter Pfad: {entry['path']}")  # Ausgabe des gespeicherten Pfads
+        print(f"Gespeicherter Pfad: {entry['path']}")
     return jsonify(progress)
 
 @app.route("/update_progress", methods=["POST"])
@@ -103,7 +99,6 @@ def update_progress():
     page_idx = data.get("page_idx", 0)
     last_page_idx = data.get("last_page_idx", 0)
 
-    # Debugging: Ausgabe des Pfads, der vom Front-End empfangen wird
     print(f"Empfangener Pfad: {path}")
 
     progress = load_progress()
@@ -133,14 +128,11 @@ def save_progress(progress):
 
 @app.route("/update_series_order", methods=["POST"])
 def update_series_order():
-    # Empfange die neue Reihenfolge der Serien
     new_order = request.json.get("new_order", [])
 
-    # Überprüfen, ob die Reihenfolge nicht leer ist
     if not new_order:
         return jsonify({"status": "error", "message": "Die Reihenfolge ist leer!"})
 
-    # Speichern der neuen Reihenfolge in `series_order.json`
     series_order_path = "series_order.json"
 
     try:
@@ -149,24 +141,20 @@ def update_series_order():
         
         return jsonify({"status": "success", "message": "Die Reihenfolge der Serien wurde aktualisiert!"})
     except Exception as e:
-        # Fehler beim Speichern
         return jsonify({"status": "error", "message": f"Fehler beim Speichern der Reihenfolge: {str(e)}"})
 
 @app.route("/series_order", methods=["GET"])
 def get_series_order():
     series_order_path = "series_order.json"
 
-    # Überprüfen, ob die Datei existiert
     if not os.path.exists(series_order_path):
-        return jsonify([])  # Falls die Datei nicht existiert, gib eine leere Liste zurück
+        return jsonify([])
 
     try:
-        # Lade die Reihenfolge aus der Datei
         with open(series_order_path, "r", encoding="utf-8") as f:
             series_order = json.load(f)
-        return jsonify(series_order)  # Gib die Reihenfolge als JSON zurück
+        return jsonify(series_order)
     except Exception as e:
-        # Fehler beim Laden der Reihenfolge
         return jsonify({"status": "error", "message": f"Fehler beim Laden der Reihenfolge: {str(e)}"})
 
 
@@ -208,7 +196,7 @@ def save_category():
 @app.route('/update_last_accessed', methods=['POST'])
 def update_last_accessed():
     data = request.json
-    print(f"DEBUG - Updating last accessed: {data}")  # Debug logging
+    print(f"DEBUG - Updating last accessed: {data}")
     try:
         last_accessed_path = 'last_accessed.json'
         last_accessed = {}
@@ -217,25 +205,21 @@ def update_last_accessed():
             with open(last_accessed_path, 'r', encoding='utf-8') as f:
                 last_accessed = json.load(f)
         
-        # Convert series names to consistent format
         series_name = data['series']
         last_accessed[series_name] = data['volume']
         
-        # Write with atomic replacement
         temp_path = last_accessed_path + '.tmp'
         with open(temp_path, 'w', encoding='utf-8') as f:
             json.dump(last_accessed, f, ensure_ascii=False, indent=2)
         
-        # Atomic rename
         os.replace(temp_path, last_accessed_path)
         
-        print(f"DEBUG - Successfully updated last accessed for {series_name}")  # Debug logging
+        print(f"DEBUG - Successfully updated last accessed for {series_name}")
         return jsonify({'status': 'success'})
     except Exception as e:
-        print(f"ERROR - Failed to update last accessed: {str(e)}")  # Debug logging
+        print(f"ERROR - Failed to update last accessed: {str(e)}")
         return jsonify({'status': 'error', 'message': str(e)}), 500
-        
-# Add this endpoint to get last accessed data
+
 @app.route('/last_accessed')
 def get_last_accessed():
     last_accessed_path = 'last_accessed.json'
@@ -244,5 +228,41 @@ def get_last_accessed():
             return jsonify(json.load(f))
     return jsonify({})
 
+@app.route('/update_last_opened', methods=['POST'])
+def update_last_opened():
+    data = request.json
+    print(f"DEBUG - Updating last opened: {data}")
+    try:
+        last_opened_path = 'last_opened.json'
+        last_opened = {}
+        
+        if os.path.exists(last_opened_path):
+            with open(last_opened_path, 'r', encoding='utf-8') as f:
+                last_opened = json.load(f)
+        
+        series_name = data['series']
+        timestamp = data['timestamp']
+        last_opened[series_name] = timestamp
+        
+        temp_path = last_opened_path + '.tmp'
+        with open(temp_path, 'w', encoding='utf-8') as f:
+            json.dump(last_opened, f, ensure_ascii=False, indent=2)
+        
+        os.replace(temp_path, last_opened_path)
+        
+        print(f"DEBUG - Successfully updated last opened for {series_name}")
+        return jsonify({'status': 'success'})
+    except Exception as e:
+        print(f"ERROR - Failed to update last opened: {str(e)}")
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+@app.route('/last_opened')
+def get_last_opened():
+    last_opened_path = 'last_opened.json'
+    if os.path.exists(last_opened_path):
+        with open(last_opened_path, 'r', encoding='utf-8') as f:
+            return jsonify(json.load(f))
+    return jsonify({})
+
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=1506)  # Port 1506
+    app.run(debug=True, host="0.0.0.0", port=1506)
